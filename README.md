@@ -115,6 +115,8 @@ the process).
 
 Contrary to the previous Scenario, in this scenario the data controller again performs the pseudonymisation but this time the processor is not involved in the process but only receives the pseudonymised data from the controller.
 
+### Figure 3 -  Pseudonymisation example Scenario 3
+
 ![SENDING PSEUDONYMISED DATA TO A PROCESSOR](/images/scenario-3.png)
 
 In this scenario a data controller (Alpha Corp.) collecting data and performing the task of data pseudonymisation (in its role as pseudonymisation entity). The difference with previous Scenarios is that now this data controller forwards the pseudonymised data to a subsequent data processor (Beta Inc.), e.g. for statistical analysis, or persistent data storage. In this Scenario, the protection goal provided by data pseudonymisation can unfold: Beta Inc. does not learn the identifiers of the data subjects, thus is not directly able to re-identify the natural persons behind the data (assuming that no other attribute that could lead to re-identification is available to Beta Inc.). In this way, pseudonymisation protects the security of the data with regard to the processor.
@@ -124,6 +126,8 @@ A variation of this scenario could be the case where the pseudonymised data is n
 ## 3.4 PROCESSOR AS PSEUDONYMISATION ENTITY
 
 Another possible scenario is the case where the task of pseudonymisation is assigned by the controller to a data processor (e.g. a cloud service provider that manages the pseudonymisation secret and/or arranges the relevant technical facilities).
+
+### Figure 4 -  Pseudonymisation example Scenario 4
 
 ![PROCESSOR AS PSEUDONYMISATION ENTITY](images/scenario-4.png)
 
@@ -135,6 +139,8 @@ A variation of this scenario could be a case where several different processors 
 ## 3.5 THIRD PARTY AS PSEUDONYMISATION ENTITY
 
 In this scenario the pseudonymisation is performed by a third party (not a processor) who subsequently forwards the data to the controller. Contrary to the scenario 4, the controller in this scenario does not have access to the data subjects’ identifiers (as the third party is not under the control of the data controller). 
+
+### Figure 5 -  Pseudonymisation example Scenario 5
 
 ![THIRD PARTY AS PSEUDONYMISATION ENTITY](/images/scenario-5.png)
 
@@ -149,6 +155,8 @@ An interesting variation of this scenario (that would require further analysis) 
 This is a special case of pseudonymisation where the pseudonyms are created by the data subjects themselves as part of the overall pseudonymisation process.
 
 As can be seen in the example of Figure 6, every individual generates his/her pseudonym, then forwards their data with this pseudonym onwards.
+
+### Figure 6 -  Pseudonymisation example Scenario 6
 
 ![DATA SUBJECT AS PSEUDONYMISATION ENTITY](/images/scenario-6.png)
 
