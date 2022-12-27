@@ -22,10 +22,10 @@ The overall scope of our pseudonymisation (tech-legal) service is to provide our
 More specifically, our objectives are to: 
   - Identify different pseudonymisation scenarios and the relevant actors involved. 
   - Select possible pseudonymisation techniques in correlation with relevant adversarial and attack models. 
-  - Analyse the application of pseudonymisation to specific types of identifiers and other types of structured and unstrustured data sets (use cases). 
-  - Draw relevant conclusions and make recommendations for ongoing improvement for pseudonymisation. 
+  - Analyse the application of pseudonymisation to specific identifiers and other types of structured and unstructured data sets (use cases). 
+  - Draw relevant conclusions and make recommendations for ongoing improvement. 
   
-It should be noted that most uses cases are generally based on specific types of identifiers (IP addresses, email addresses, and username identifiers in both structured and unstructured data sets) that represent real-life scenarios. At the same time, use cases also reflect diverse requirements with regard to pseudonymisation, i.e. arising from the strict format of IP addresses to the more flexible structure of email addresses and usernames, and the unpredictable nature of large datasets. Our target audience are data controllers, data processors and producers of products, services and applications, and any other interested party in data pseudonymisation services.
+It should be noted that most uses cases are generally based on specific types of identifiers (IP addresses, email addresses, and username identifiers in both structured and unstructured data sets) that represent real-life scenarios. At the same time, use cases also reflect diverse requirements with regard to pseudonymisation, i.e. arising from the strict format of IP addresses to the more flexible structure of email addresses and usernames, and the unpredictable nature of large datasets. Our target audience are data controllers, data processors and producers of products, services and applications, and any other interested party in data pseudonymisation.
 
 ## 1.3 SERVICE MODULES
 
