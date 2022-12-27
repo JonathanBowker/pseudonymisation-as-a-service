@@ -247,6 +247,17 @@ This type of attack utilises some background knowledge (such as probability dist
 Let us consider a case dealing with pseudonyms corresponding to ‘first names’.  The domain of ‘first names’ is difficult to explore in its entirety. However, the adversary knows which ‘first names’ are the most popular (Table 2). The adversary can mount an exhaustive search or
 dictionary search on the domain of the most popular ‘first names’ and achieve discrimination.
 
+| Most popular first names |
+| ------------- |
+| Month of Birth   | Pseudonym | Month of birth | Pseudonym |
+| ------------- | ------------- | ------------- | ------------- |
+| Jan.  | 281  | Jul.  | 299  |
+| Feb.  | 269  | Aug.  | 285  |
+| Mar.  | 288  | Sep.  | 296  |
+| Apr.  | 291  | Oct.  | 294  |
+| May.  | 295  | Nov.  | 307  |
+| Jun.  | 301  | Dec.  | 268  |
+
 ![UTILITY AND DATA PROTECTION](/images/utility.png)
 
 Let us assume a similar case but with an infinite size of identifiers domain. A finite subdomain of identifiers, which are included in the dataset, can be defined. If the adversary can guess this subdomain, he/she can mount an exhaustive search (see Section 6 for relevant use case on email address pseudonymisation). Depending on the amount of background information or metadata that the adversary possesses, and the amount of linkable information found in the pseudonymised dataset, this type of attack may lead to uncovering the identity of a single pseudonym holder, a fraction of them, or the entirety of the dataset. Especially for small datasets, such attacks may be feasible with high success rates.
