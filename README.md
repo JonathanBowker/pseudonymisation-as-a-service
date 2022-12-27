@@ -70,7 +70,7 @@ We present a number of terms that we use as part of our service and are essentia
 
 **Re-identification Attack** is an attack to pseudonymisation performed by an Adversary that aims to re-identify the holder of a pseudonym.
 
-# 3. PSEUDONYMISATION ScenarioS
+# 3. PSEUDONYMISATION SCENARIOS
 Pseudonymisation plays an important role in GDPR as a security measure (art. 32 GDPR), as well as in the context of data protection by design (art. 25 GDPR). The most obvious benefit of pseudonymisation is to hide the identity of the data subjects from any third party (i.e. other than the pseudonymisation entity) in the context of a specific data processing operation. Still, pseudonymisation can go beyond hiding real identities into supporting the data protection goal of unlinkability, i.e. reducing the risk that privacy-relevant data can be linked across different data processing domains. 
 
 Furthermore, pseudonymisation (being itself a data minimisation technique) can contribute towards the principle of data minimisation under GDPR, for example in cases where the controller does not need to have access to the real identities of data subjects but only to their pseudonyms. Finally, another important benefit of pseudonymisation that should be carefully considered is that of data accuracy.
