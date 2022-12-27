@@ -561,7 +561,7 @@ The total number of worldwide email accounts is roughly estimated to 4.7 billion
 
 #### Figure 10: Reversing an e-mail address from its hash value
 
-![Reversing an e-mail address from its hash value](/images/email-hash.png)
+![Reversing an e-mail address from its hash value](/images/email-hash.jpg)
 
 Despite the aforementioned pitfalls of cryptographic hash functions, it should be pointed out that, as indicated above, service providers often share email addresses with third parties, just by simply hashing them. A concrete example of such case is the operation of the so-called custom audience lists, which provides to companies the possibility to compare hashed values of customers’ email addresses for defining common lists of customers.
 
@@ -575,7 +575,7 @@ As in previous techniques, in order to increase utility of the pseudonyms, diffe
 
 #### Figure 12: Conventional vs. format preserving encryption to derive pseudonym from e-mail address
 
-![Using MAC to generate pseudonymised e-mail addresses with some utility](/images/email-mac.png)
+![Using MAC to generate pseudonymised e-mail addresses with some utility](/images/email-mac.jpg)
 
 One important aspect regarding practical implementation of MAC is recovery. It should be stressed that even the data pseudonymisation entity, which has access to the secret key, is not able to directly reverse the pseudonyms; such a reversion can be obtained only indirectly, by reproducing the pseudonyms for each known e-mail address in order to see the matches with the pseudonymised list. Clearly, if a pseudonymisation mapping table is available, reversing pseudonyms is trivial, but in such a case, the storage requirements also increase. For these reasons, MAC is probably not the most practical pseudonymisation technique in cases that the data controller needs to be able to map pseudonyms to e-mail addresses easily.
 
