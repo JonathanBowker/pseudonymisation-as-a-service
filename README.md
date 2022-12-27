@@ -247,6 +247,8 @@ This type of attack utilises some background knowledge (such as probability dist
 Let us consider a case dealing with pseudonyms corresponding to ‘first names’.  The domain of ‘first names’ is difficult to explore in its entirety. However, the adversary knows which ‘first names’ are the most popular (Table 2). The adversary can mount an exhaustive search or
 dictionary search on the domain of the most popular ‘first names’ and achieve discrimination.
 
+###### Table 2: A list of popular first names
+
 | Name | Name | Name | Name | Name | Name |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Bob  | Alice  | Charlie  | Eve  | Robert  | Marie  |
