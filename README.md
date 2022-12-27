@@ -13,31 +13,32 @@ Pseudonymisation techniques have their own well understood and intrinsic propert
 # 1. INTRODUCTION
 
 ## 1.1 BACKGROUND
-Pseudonymisation is a well-known de-identification process that has gained additional attention following the adoption of EU and UK GDPR, where it is referenced as both a security and data protection by design mechanism. **In addition, in the GDPR context, pseudonymisation can motivate the relaxation, to a certain degree, of data controllers’ legal obligations if properly applied.**
+Pseudonymisation is a well-known de-identification process that has gained additional attention following the adoption of EU and UK GDPR, where it is referenced as both a technical security measure and data protection by design mechanism. **In addition, in the GDPR context, pseudonymisation can motivate the relaxation, to a certain degree, of data controllers’ legal obligations if properly applied.**
 
 ## 1.2 SCOPE AND OBJECTIVES
 
-The overall scope of our service is to provide guidance and advise for best practices on the technical implementation of data pseudonymisation.
+The overall scope of our pseudonymisation tech-legal service is to provide clients with guidance and advise for best practices on the technical implementation of data pseudonymisation.
 
-More specifically, the objectives of the report are as follows: 
-  - Discuss different pseudonymisation Scenarios and relevant actors involved. 
-  - Identify possible pseudonymisation techniques in correlation with relevant adversarial and attack models. 
-  - Analyse the application of pseudonymisation to specific types of identifiers, in particular IP addresses, email addresses, usernames and other types of structured data sets (use cases). 
-  - Draw relevant conclusions and make recommendations for further work in pseudonymisation. 
+More specifically, our objectives are to: 
+  - Identify different pseudonymisation scenarios and the relevant actors involved. 
+  - Select possible pseudonymisation techniques in correlation with relevant adversarial and attack models. 
+  - Analyse the application of pseudonymisation to specific types of identifiers, in particular IP addresses, email addresses, usernames and other types of structured and unstrustured data sets (use cases). 
+  - Draw relevant conclusions and make recommendations for ongoing work for improving pseudonymisation in the future. 
   
-It should be noted that uses case secenarios are generally based specific types of identifiers (IP addresses, email addresses, and username identifiers in structured data sets) that represent real-life Scenarios. At the same time, use cases also reflect diverse requirements with regard to pseudonymisation, i.e. arising from the strict format of IP addresses to the more flexible structure of email addresses and the unpredictable nature of larger datasets. The target audience for our service are data controllers, data processors and producers of products, services and applications, and any other interested party in data pseudonymisation.
+It should be noted that most uses cases are generally based on specific types of identifiers (IP addresses, email addresses, and username identifiers in both structured and unstructured data sets) that represent real-life scenarios. At the same time, use cases also reflect diverse requirements with regard to pseudonymisation, i.e. arising from the strict format of IP addresses to the more flexible structure of email addresses and usernames, and the unpredictable nature of large datasets. Our target audience are data controllers, data processors and producers of products, services and applications, and any other interested party in data pseudonymisation services.
 
-## 1.3 SERVICE OUTLINE
+## 1.3 SERVICE MODULES
 
-The outline of the setvice is as follows:
-  - Establishing the terminology used with relevant explanatory remarks where needed.
-  - Identifying the pseudonymisation Scenario(s) that are or will be engaged in practice.
-  - Detailing the adversarial and attack models with regard to pseudonymisation.
-  - Selecting the pseudonymisation techniques and policies that are available today.
-  - Analysing the application of different pseudonymisation techniques to identifiers (use cases).
-  - Providing the conclusions and recommendations for all related stakeholders.
+The outline of the service is as follows:
+  - Implementing the dictionary and definitions and relevant explanatory notes where needed.
+  - Identifying the pseudonymisation scenario to be engaged in practice.
+  - Assessing adversarial and attack models with regard to the pseudonymisation.
+  - Selecting the appropriate pseudonymisation techniques and policies.
+  - Testing pseudonymisation techniques on identifiers and more complex datasets (use cases). 
+  - Implementing the pseudonymisation server and deploying models in production.
+  - Providing ongoing support and recommendations for all related stakeholders.
 
-This service focuses on analysing technical solutions for the implementation of GDPR complaince programmes, privacy by design and security of personal data processing.
+Our Pseudonymisation service focuses on analysing technical solutions for the implementation of robust GDPR complaince programmes, privacy by design and security of personal data processing.
 
 # 2. DEFINITIONS 
 We present a number of terms that we use as part of our service and are essential to project stakeholder. Some of these terms are based on GDPR, whereas others refer to technical standards or are explicitly defined for the purpose of service delivery.
