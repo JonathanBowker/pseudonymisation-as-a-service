@@ -559,9 +559,7 @@ The main pitfalls of both counter and RNG lie with the scalability of the techni
 
 The total number of worldwide email accounts is roughly estimated to 4.7 billion is apprx 2 32 (since, despite the theoretically practically infinite size of the valid email addresses space, existing addresses lie in a much smaller space). This fact, as also mentioned earlier in the Section, makes email addresses easily found or guessed25, thus rendering cryptographic hash functions a weak technique for pseudonymisation. Indeed, it is trivial to any insider or external adversary, having access to a pseudonymised list of email addresses, to perform a dictionary attack (Figure 10). This observation is relevant to all pseudonymisation Scenarios presented in Section 3 (independently of whether the pseudonymisation entity is the controller, the processor or a trusted third party).
 
-#### Table 12: Example of email address pseudonymisation with RNG or counter (full pseudonymisation)
-
-
+#### Figure 10: Reversing an e-mail address from its hash value
 
 ![Reversing an e-mail address from its hash value](/images/email-hash.png)
 
@@ -574,6 +572,8 @@ Notwithstanding the above significant data-protection risks, the cryptographic h
 Compared to simple hashing, a message authentication code (MAC) provides significant data protection advantages also for email address pseudonymisation, as long as the secret key is securely stored. Moreover, the pseudonymisation entity may use different secret keys, for different sectors, to generate for example different sector-based pseudonyms for the same email address. A MAC can also be used to restrict the controller from having access to the email addresses in cases where access to the pseudonyms is sufficient for the particular purpose of processing (e.g. under Scenarios 5 and 6 in Section 3). Such a case could be, for example, in interest-based display advertising, in which the advertisers need to associate a unique pseudonym for each individual but without being able to reveal the user's original identity.
 
 As in previous techniques, in order to increase utility of the pseudonyms, different implementation Scenarios could be discussed in practice. For example, one possible approach would be to apply the MAC separately to different parts of the e-mail address (e.g. local and domain parts), using the same secret key. A characteristic example is shown in Figure 11: the usage of the same key for each MAC results in generating the same sub-pseudonyms for the corresponding domain parts (in green color) whenever the email address domains are identical. However, since the output of a MAC has a fixed size, which is generally much larger than the size of the initial e-mail address27, the resulting pseudonyms may be of quite large size (which is further increased if different parts are pseudonymised separately).
+
+#### Figure 12: Conventional vs. format preserving encryption to derive pseudonym from e-mail address
 
 ![Using MAC to generate pseudonymised e-mail addresses with some utility](/images/email-mac.png)
 
@@ -593,15 +593,21 @@ In this use case, email addresses are considered as identifiers (e.g. in a datab
 
 Considering the descriptions in Section 5, both counter and RNG can be used for the pseudonymisation of emails with the use of a mapping table, as the one shown in the example of Table 12. Clearly, pseudonymisation is strong as long as the mapping table is secured and stored separately from the pseudonymised data.
 
+#### Table 12: Example of email address pseudonymisation with RNG or counter (full pseudonymisation)
+
 ![Example of email address pseudonymisation with RNG](/images/mode-mapping.png)
 
 In the example of Table 12, both counter and RNG result to pseudonyms that do not reveal any information on the initial identifiers (email addresses) and do not allow any further analysis (e.g. statistical analysis) on the pseudonyms. In order to increase utility, it is possible to apply pseudonymisation only to a part of the email address, e.g. the local part (without affecting the domain part - see Table 13).
+
+#### Table 13: Example of email address pseudonymisation with RNG or counter (only local part pseudonymisation)
 
 ![Example of email address pseudonymisation with RNG or counter only local part pseudonymisation](/images/email-mapping.png)
 
 As shown in Table 13, while the emails are pseudonymised, it is still possible to know the domain and, thus, conduct relevant analysis (e.g. number of email users originating from the same domain). As discussed earlier in the document, counter may be weaker in terms of protection as it allows for predictions due to its sequential nature (e.g. in cases where email addresses come from the same domain, the use of counter may reveal information regarding the sequence of the different email users in the database). 
 
 Starting from this simple case, depending on the level of data protection and utility that the pseudonymisation entity needs to achieve, different variations might be possible by retaining different levels of information in the pseudonyms (e.g. on identical domains, local parts, etc.).
+
+#### Table 14: Examples of email address pseudonymisation with RNG - various utility levels
 
 ![Examples of email address pseudonymisation with RNG - various utility levels](/images/email-complex-mapping.png)
 
@@ -610,6 +616,8 @@ The main pitfalls of both counter and RNG lie with the scalability of the techni
 ## 7.2 CRYPTOGRAPHIC HASH FUNCTION
 
 The total number of worldwide email accounts is roughly estimated to 4.7 billion is apprx 2 32 (since, despite the theoretically practically infinite size of the valid email addresses space, existing addresses lie in a much smaller space). This fact, as also mentioned earlier in the Section, makes email addresses easily found or guessed25, thus rendering cryptographic hash functions a weak technique for pseudonymisation. Indeed, it is trivial to any insider or external adversary, having access to a pseudonymised list of email addresses, to perform a dictionary attack (Figure 10). This observation is relevant to all pseudonymisation Scenarios presented in Section 3 (independently of whether the pseudonymisation entity is the controller, the processor or a trusted third party).
+
+#### Figure 10: Reversing an e-mail address from its hash value
 
 ![Reversing an e-mail address from its hash value](/images/email-hash.png)
 
@@ -623,11 +631,11 @@ Compared to simple hashing, a message authentication code (MAC) provides signifi
 
 As in previous techniques, in order to increase utility of the pseudonyms, different implementation Scenarios could be discussed in practice. For example, one possible approach would be to apply the MAC separately to different parts of the e-mail address (e.g. local and domain parts), using the same secret key. A characteristic example is shown in Figure 11: the usage of the same key for each MAC results in generating the same sub-pseudonyms for the corresponding domain parts (in green color) whenever the email address domains are identical. However, since the output of a MAC has a fixed size, which is generally much larger than the size of the initial e-mail address27, the resulting pseudonyms may be of quite large size (which is further increased if different parts are pseudonymised separately).
 
+#### Figure 11: Using MAC to generate pseudonymised e-mail addresses with some utility
+
 ![Using MAC to generate pseudonymised e-mail addresses with some utility](/images/email-mac.png)
 
 One important aspect regarding practical implementation of MAC is recovery. It should be stressed that even the data pseudonymisation entity, which has access to the secret key, is not able to directly reverse the pseudonyms; such a reversion can be obtained only indirectly, by reproducing the pseudonyms for each known e-mail address in order to see the matches with the pseudonymised list. Clearly, if a pseudonymisation mapping table is available, reversing pseudonyms is trivial, but in such a case, the storage requirements also increase. For these reasons, MAC is probably not the most practical pseudonymisation technique in cases that the data controller needs to be able to map pseudonyms to e-mail addresses easily.
-
-7.4 ENCRYPTION An alternative to MAC is encryption, applied especially in a deterministic way, i.e. by utilising a secret key to produce a pseudonym for each e-mail address (symmetric encryption). Deployment is more practical in such case, since there is no need to provide for a pseudonymisation mapping table: recovery is directly possible through the decryption process [37]. Note that, although some asymmetric (public key) cryptographic algorithms can be implemented in a deterministic way28 , they are not recommended for the pseudonymisation of e-mail addresses (or for other data types). For example, let us assume that the pseudonymisation entity needs to generate, for each e-mail address, different pseudonyms for different – internal or external – users/recipients (with the assumption that each recipient will be able to re-identify his or her own data but not the pseudonymised data of other recipients). One possibility to achieve this goal would be to encrypt the emails with the public key of each recipient, thus allowing only the specific recipient to perform the decryption. However, assuming
 
 ## 7.4 ENCRYPTION 
 An alternative to MAC is encryption, applied especially in a deterministic way, i.e. by utilising a secret key to produce a pseudonym for each e-mail address (symmetric encryption). Deployment is more practical in such case, since there is no need to provide for a pseudonymisation mapping table: recovery is directly possible through the decryption process. 
@@ -640,7 +648,7 @@ The nature of encryption by default does not allow for utility of the pseudonymi
 
 A database scheme might expect a particular data type for specific fields. For example, an email address is expected to contain a local part (info), followed by an @ symbol, which in turn is followed by a domain. If there is no need, for the data controller, to retain the initial e-mail addresses but there is still need to keep a pseudonymised list by keeping the structure of the database, format preserving encryption is a suitable candidate for achieving this. There are several known implementations on format-preserving encryption, based on known encryption schemes. In any case, any (pseudo)random substitution of characters by other characters lying in the same alphabet - i.e. the set of alphanumeric characters enriched by special characters appearing in local parts of e-mail addresses - suffices to ensure that the derived pseudonym has the desired form. The difference between FPE and conventional cryptography is illustrated in Figure 12.
 
-Conventional vs. format preserving encryption to derive pseudonym from e-mail address
+#### Figure 12: Conventional vs. format preserving encryption to derive pseudonym from e-mail address
 
 ![Conventional vs. format preserving encryption to derive pseudonym from e-mail address](/images/format-preserving.png)
 
