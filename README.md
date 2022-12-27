@@ -247,7 +247,7 @@ This type of attack utilises some background knowledge (such as probability dist
 Let us consider a case dealing with pseudonyms corresponding to ‘first names’.  The domain of ‘first names’ is difficult to explore in its entirety. However, the adversary knows which ‘first names’ are the most popular (Table 2). The adversary can mount an exhaustive search or
 dictionary search on the domain of the most popular ‘first names’ and achieve discrimination.
 
-###### Table 2: A list of popular first names
+##### Table 2: A list of popular first names
 
 | Name | Name | Name | Name | Name | Name |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -258,6 +258,8 @@ Let us assume a similar case but with an infinite size of identifiers domain. A 
 ### 4.5 UTILITY AND DATA PROTECTION
 
 Depending on the choice of pseudonymisation function, a pseudonym may contain some information on the original identifier. Therefore, every such type of pseudonym carries the risk of being subject to a re-identification attack as those described above. For example, an attacker with sufficient background knowledge might be able to link the pseudonym back to its identifier by performing a guesswork.
+
+##### Figure 7: Utility and data protection
 
 ![UTILITY AND DATA PROTECTION](/images/utility.png)
 
