@@ -172,15 +172,13 @@ Understanding these topics is an essential element for further analysing the use
 
 ## 4.1 INSIDER ADVERSARIES
 
-According to the common understanding of the term in IT security, an insider is an adversary
-with specific knowledge, capabilities, or permissions (with regard to the target of the
-adversary). In the context of pseudonymisation, this implies that the adversary is in a position to gain information about the pseudonymisation secret and/or other relevant significant information.
+According to the common understanding of the term in IT security, an insider is an adversary with specific knowledge, capabilities, or permissions (with regard to the target of the adversary). In the context of pseudonymisation, this implies that the adversary is in a position to gain information about the pseudonymisation secret and/or other relevant significant information.
+
 For example, considering the Scenarios in Section 3, an insider could be on the controller’s side (e.g. an employee working for the controller) under Scenarios 1, 2, 3 and 4. It could also rest on the processor’s side (e.g. a malicious employee of a contractor) under Scenarios 2 and 4. Last, in the case of scenario 5, the insider adversary could lie within the trusted third party (acting in this scenario as the pseudonymisation entity). By default third parties that might legitimately have access to the personal data (e.g. a supervisory or law enforcement authority) are not considered as adversaries.
 
 ## 4.2 EXTERNAL ADVERSARIES
 In contrast to the insider adversary, an external adversary does not have direct access to the pseudonymisation secret or other relevant information. However, this type of adversary may have access to a pseudonymised dataset, and may also be able to perform the task of
-pseudonymisation to arbitrary input data values chosen by the adversary (e.g. by having access to a black box implementation of the pseudonymisation function, or by being able to force the
-pseudonymisation entity to pseudonymise arbitrary inputs). The goal of an external adversary is to increase his or her own information on the pseudonymised dataset, e.g. by learning the identity behind a given pseudonym (and acquiring further information on that identity from the additional data found in the dataset for the given pseudonym).
+pseudonymisation to arbitrary input data values chosen by the adversary (e.g. by having access to a black box implementation of the pseudonymisation function, or by being able to force the pseudonymisation entity to pseudonymise arbitrary inputs). The goal of an external adversary is to increase his or her own information on the pseudonymised dataset, e.g. by learning the identity behind a given pseudonym (and acquiring further information on that identity from the additional data found in the dataset for the given pseudonym).
 
 Considering the Scenarios of Section 3, by definition any actor who acts maliciously in all Scenarios and is not part of the pseudonymisation entity or working on behalf of the pseudonymisation entity should be considered as an external adversary.  A (malicious) data could take the role of an external adversary under scenario 5 or 6. A (malicious) data processor could also take this role under scenario 3.
 
@@ -218,7 +216,16 @@ These attacking techniques are briefly described next.
 
 The practicality of this attack technique is conditioned on the adversary’s ability to compute the pseudonymisation function (i.e. there is no pseudonymisation secret) or his/her access to a “black box” implementation of the pseudonymisation function. Depending on the goal of the attack, extra conditions may apply. If the brute force attack is used to achieve complete reidentification (i.e. restoration of the original identity), the identifier domain must be finite and relatively small. For each pseudonym encountered by the adversary, he/she can attempt to recover the original identifier by applying the pseudonymisation function on each value of the identifier domain until he/she finds a match.
 
-![Brute force attack](/images/bruteforce.png)
+##### Table 1: Pseudonymisation of month of birth
+
+| Month of Birth   | Pseudonym | Month of birth | Pseudonym |
+| ------------- | ------------- | ------------- | ------------- |
+| Jan.  | 281  | Jul.  | 299  |
+| Feb.  | 269  | Aug.  | 285  |
+| Mar.  | 288  | Sep.  | 296  |
+| Apr.  | 291  | Oct.  | 294  |
+| May.  | 295  | Nov.  | 307  |
+| Jun.  | 301  | Dec.  | 268  |
 
 Let us consider the pseudonymisation of a month of birth in a dataset. The size of the identifier domain is 12, thus an adversary can enumerate quickly all the possibilities. The pseudonyms associated to each month are computed in this case as the sum of the ASCII code of the first three letters of the month of birth (with the first being a capital one). Let us consider that an adversary has encountered the pseudonym 301. He or she can apply on each month of birth the pseudonymisation function until he/she finds the month which corresponds to the value 301. Table 1 shows the computations made by the adversary to re-identify pseudonym 301 resulting in the mapping table of the pseudonymisation function.
 
