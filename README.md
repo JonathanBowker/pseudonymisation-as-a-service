@@ -17,7 +17,7 @@ Pseudonymisation is a well-known de-identification process that has gained addit
 
 ## 1.2 SCOPE AND OBJECTIVES
 
-The overall scope of our pseudonymisation tech-legal service is to provide clients with guidance and advise for best practices on the technical implementation of data pseudonymisation.
+The overall scope of our pseudonymisation (tech-legal) service is to provide our clients with guidance and advise for best practice on the technical implementation of data pseudonymisation strategy.
 
 More specifically, our objectives are to: 
   - Identify different pseudonymisation scenarios and the relevant actors involved. 
