@@ -253,18 +253,17 @@ dictionary search on the domain of the most popular ‘first names’ and achiev
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Bob  | Alice  | Charlie  | Eve  | Robert  | Marie  |
 
-![UTILITY AND DATA PROTECTION](/images/utility.png)
-
 Let us assume a similar case but with an infinite size of identifiers domain. A finite subdomain of identifiers, which are included in the dataset, can be defined. If the adversary can guess this subdomain, he/she can mount an exhaustive search (see Section 6 for relevant use case on email address pseudonymisation). Depending on the amount of background information or metadata that the adversary possesses, and the amount of linkable information found in the pseudonymised dataset, this type of attack may lead to uncovering the identity of a single pseudonym holder, a fraction of them, or the entirety of the dataset. Especially for small datasets, such attacks may be feasible with high success rates.
 
 ### 4.5 UTILITY AND DATA PROTECTION
 
 Depending on the choice of pseudonymisation function, a pseudonym may contain some information on the original identifier. Therefore, every such type of pseudonym carries the risk of being subject to a re-identification attack as those described above. For example, an attacker with sufficient background knowledge might be able to link the pseudonym back to its identifier by performing a guesswork.
 
+![UTILITY AND DATA PROTECTION](/images/utility.png)
+
 However, in many cases, the additional information on the original identifier contained in the pseudonym is kept for linkage among pseudonyms themselves, to be performed by a valid subsequent data controller. For instance, a pseudonym may keep the year of birth from a person's birth date as part of the pseudonym (e.g. ‘’AAAA1999’’). This way, it is feasible to categorise pseudonyms based on their year of birth, e.g. concerning their age, their legal status (child or adult), their life conditions (schoolchild/working/retired), or similar. This may be an intentional feature of the pseudonymisation function utilised, allowing controllers to perform such sort of classification even on the pseudonymised data. 
 
 Clearly, the choice of the pseudonymisation function may allow for some utility of the pseudonyms created, taking into account the potential loss of protection caused by this pseudonymisation approach. Hence, a trade-off between utility and data protection can be considered (see Figure 7). When considering the application of pseudonymisation to real-world Scenarios, this trade-off should be analysed carefully, so as to optimize utility for the intended purposes while keeping the protection of the pseudonym holders (data subjects) as strong as possible.
-
 
 # 5. PSEUDONYMISATION TECHNIQUES
 
