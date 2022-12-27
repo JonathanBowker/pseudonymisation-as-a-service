@@ -448,22 +448,57 @@ In the previous section, it was considered that pseudonymisation is applied on t
 
 The choice of the pseudonymisation mode has a strong impact on the utility and on the data protection level, independently of the choice of a certain pseudonymisation technique. In this section, this relation is further explored with a specific example. Let us consider the pseudonymisation of the source and destination IP addresses in a network trace. Table 6 provides the source and destination addresses of the first packets of an HTTP request between a client (145.254.160.237) and a server (65.208.228.223).
 
-![Source and destination of an HTTP request](/images/mode-choice.png)
+#### Table 6: Source and destination of an HTTP request
 
-In the example mentioned above, let us apply deterministic pseudonymisation using an RNG for instance. Each IP address is associated to a unique pseudonym. The mapping table obtained in
-our case is given in Table 7. After deterministic pseudonymisation, Table 8 is obtained.
+| Packet | Source | Destination |
+| ------------- | ------------- | ------------- |
+| Packet 1  | 145.254.160.237  | 65.208.228.223 |
+| Packet 2  | 65.208.228.223  | 145.254.160.237  |
+| Packet 3  | 145.254.160.237  | 65.208.228.223  |
+| Packet 4  | 145.254.160.237 | 65.208.228.223  |
+| Packet 5  | 65.208.228.223 | 145.254.160.237  |
 
-![Mapping table for deterministic pseudonymisation](/images/mapping.png)
+In the example mentioned above, let us apply deterministic pseudonymisation using an RNG for instance. Each IP address is associated to a unique pseudonym. The mapping table obtained in our case is given in Table 7. After deterministic pseudonymisation, Table 8 is obtained.
+
+#### Table 7: Mapping table for deterministic pseudonymisation
+
+| IP address | Pseudonym |
+| ------------- | ------------- | ------------- |
+| 145.254.160.237  | 238  |
+| 65.208.228.223  | 47 |
 
 Let us compare the information that can be extracted from the original network trace (Table 6) and Table 8. As can be seen from this comparison, from both traces (original and pseudonymised), it is possible to infer the total number of IP addresses involved and how many packets were sent by each address during the communication. Therefore, while the IP addresses in Table 8 are pseudonymised, the same level of statistical analysis (and, thus, utility) is possible on the IP addresses. 
 
 Now, let us consider the case of document-randomized pseudonymisation with an RNG. Each time an IP address is encountered, it is transformed into a different pseudonym. For instance, IP Address 145.254.160.237 is associated to 5 pseudonyms, namely 39, 71, 48, 136 and 120 (Table 9). After applying document-randomized pseudonymisation, Table 10 is obtained.
 
-![Mapping table for document-randomized pseudonymisation](/images/doc-randomised-mapping.png)
+#### Table 8: Source and destination addresses transformed using deterministic pseudonymisation
+
+| Packet | Source | Destination |
+| ------------- | ------------- | ------------- |
+| Packet 1  | 238  | 47 |
+| Packet 2  | 47  | 238 |
+| Packet 3  | 238 | 47 |
+| Packet 4  | 238 | 47 |
+| Packet 5  | 47 | 238 |
 
 As shown from Table 10, while it was possible in Table 6 and Table 8 to count 2 IP addresses, this is not the case in Table 10 in which 10 IP addresses are virtually involved. Therefore, the level of utility has been reduced (while, however, increasing the level of protection). Obviously, the application of fully-randomized pseudonymisation has an even stronger impact on utility. Table 11 compares the different modes of IP pseudonymisation to this end.
 
-![Mapping table for document-randomized pseudonymisation](/images/mode-mapping.png)
+#### Table 9: Mapping table for document-randomized pseudonymisation
+
+| IP address | Pseudonym |
+| ------------- | ------------- | ------------- |
+| 145.254.160.237 | 39,71,48,136,120  |
+| 65.208.228.223 | 23,30,60,160,231 |
+
+#### Table 11: Mode of pseudonymisation and utility
+
+| Packet | Source | Destination |
+| ------------- | ------------- | ------------- |
+| Packet 1  | 39  | 23 |
+| Packet 2  | 30  | 71 |
+| Packet 3  | 48 | 60 |
+| Packet 4  | 136 | 160 |
+| Packet 5  | 231 | 120 |
 
 Clearly, there is not a single solution to this problem and the final choice always rests with the utility and protection requirements of the pseudonymisation entity.
 
@@ -479,24 +514,54 @@ In this use case, email addresses are considered as identifiers (e.g. in a datab
 
 Considering the descriptions in Section 5, both counter and RNG can be used for the pseudonymisation of emails with the use of a mapping table, as the one shown in the example of Table 12. Clearly, pseudonymisation is strong as long as the mapping table is secured and stored separately from the pseudonymised data.
 
-![Example of email address pseudonymisation with RNG](/images/mode-mapping.png)
+#### Table 12: Example of email address pseudonymisation with RNG or counter (full pseudonymisation)
+
+| E-mail address | Pseudonym (Random number generator) | Pseudonym (counter generator) |
+| ------------- | ------------- | ------------- |
+| alice@abc.eu | 328  | 10 |
+| bob@wxyz.com | 105  | 11 |
+| eve@abc.eu | 209 | 12 |
+| john@qed.edu | 83 | 13 |
+| alice@wxyz.co | 512 | 14 |
+| mary@clm.eu | 289 | 15 |
 
 In the example of Table 12, both counter and RNG result to pseudonyms that do not reveal any information on the initial identifiers (email addresses) and do not allow any further analysis (e.g. statistical analysis) on the pseudonyms. In order to increase utility, it is possible to apply pseudonymisation only to a part of the email address, e.g. the local part (without affecting the domain part - see Table 13).
 
-![Example of email address pseudonymisation with RNG or counter only local part pseudonymisation](/images/email-mapping.png)
+#### Table 13: Example of email address pseudonymisation with RNG or counter (only local part pseudonymisation)
+
+| E-mail address | Pseudonym (Random number generator) | Pseudonym (counter generator) |
+| ------------- | ------------- | ------------- |
+| alice@abc.eu | 328@abc.eu  | 10@abc.eu  |
+| bob@wxyz.com | 105@wxyz.com  | 11@wxyz.com |
+| eve@abc.eu | 209@abc.eu | 12@abc.eu |
+| john@qed.edu | 83@qed.edu | 13@qed.edu  |
+| alice@wxyz.co | 512@wxyz.com | 14@wxyz.com  |
+| mary@clm.eu | 289@clm.eu | 15@clm.eu |
 
 As shown in Table 13, while the emails are pseudonymised, it is still possible to know the domain and, thus, conduct relevant analysis (e.g. number of email users originating from the same domain). As discussed earlier in the document, counter may be weaker in terms of protection as it allows for predictions due to its sequential nature (e.g. in cases where email addresses come from the same domain, the use of counter may reveal information regarding the sequence of the different email users in the database). 
 
 Starting from this simple case, depending on the level of data protection and utility that the pseudonymisation entity needs to achieve, different variations might be possible by retaining different levels of information in the pseudonyms (e.g. on identical domains, local parts, etc.).
 
+#### Table 14: Examples of email address pseudonymisation with RNG - various utility levels
 
-![Examples of email address pseudonymisation with RNG - various utility levels](/images/email-complex-mapping.png)
+| E-mail address | Pseudonym (RNG) retaining the info on identical domains | Pseudonym (RNG) retaining also the info on identical country/extension | Pseudonym (RNG) retaining the info on identical local parts and domains | Pseudonym (RNG) retaining the info on identical country/extension, domains and local parts |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| alice@abc.eu | 328  | 10 | 10 | 10 | 10 |
+| bob@wxyz.com | 105  | 11 | 10 | 10 | 10 |
+| eve@abc.eu | 209 | 12 | 10 | 10 | 10 |
+| john@qed.edu | 83 | 13 | 10 | 10 | 10 |
+| alice@wxyz.co | 512 | 14 | 10 | 10 | 10 |
+| mary@clm.eu | 289 | 15 | 10 | 10 | 10 |
 
 The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
 
 ## 7.2 CRYPTOGRAPHIC HASH FUNCTION
 
 The total number of worldwide email accounts is roughly estimated to 4.7 billion is apprx 2 32 (since, despite the theoretically practically infinite size of the valid email addresses space, existing addresses lie in a much smaller space). This fact, as also mentioned earlier in the Section, makes email addresses easily found or guessed25, thus rendering cryptographic hash functions a weak technique for pseudonymisation. Indeed, it is trivial to any insider or external adversary, having access to a pseudonymised list of email addresses, to perform a dictionary attack (Figure 10). This observation is relevant to all pseudonymisation Scenarios presented in Section 3 (independently of whether the pseudonymisation entity is the controller, the processor or a trusted third party).
+
+#### Table 12: Example of email address pseudonymisation with RNG or counter (full pseudonymisation)
+
+
 
 ![Reversing an e-mail address from its hash value](/images/email-hash.png)
 
