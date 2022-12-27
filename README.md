@@ -369,7 +369,16 @@ Finally, the size of the pseudonyms produced by an encryption scheme can be fixe
 
 As, by definition, the use of additional information is central to pseudonymisation, the pseudonymisation entity must implement a recovery mechanism. This mechanism can be more or less complex depending on the pseudonymisation function. In general, they consist of the use of a pseudonym 𝑝𝑠𝑒𝑢𝑑𝑜 and a pseudonymisation secret 𝑆 to recover the corresponding identifier 𝐼𝑑. This case can occur for example when the pseudonymisation entity has detected an anomaly in its system and needs to contact the designated entities. The “anomaly” can be for instance a data breach and the pseudonymisation entity needs to notify the data subjects under GDPR. In addition, the recovery mechanism might be necessary in order to allow for the exercise of data subjects rights (under articles 12-21 GDPR).
 
-![RECOVERY](/images/recovery.png)
+#### Table 4: Comparison of different techniques with regard to recovery mechanisms
+
+| Method | Recovery Dased on Pseudonym |
+| ------------- | ------------- |
+| Counter  | Mapping table  |
+| Random Number Generator  | Mapping table  |
+| Hash function  | AMapping tableny  |
+| Message Auth. Codes  | Mapping table  |
+| Encryption  | Decryption  |
+
 
 Most methods described previously require the pseudonymisation entity to keep the mapping table between the identifiers and the pseudonyms to perform identifier recovery with the exception of encryption (Table 4). Indeed, decryption can be directly applied on the identifier.
 
@@ -410,7 +419,14 @@ The main characteristic of the IP address pseudonymisation problem is the size o
 
 Taking into consideration the aforementioned characteristic, cryptographic hash functions are especially vulnerable in this use case. As an example an IP address pseudonymised with the hash function SHA-256 has been considered. An adversary with a pseudonym/digest can use existing tools 23 to perform an exhaustive search. Table 5 shows the duration of this search on a single ordinary laptop running an Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz processor (8 cores) and the size of the dictionary. Even in worst case, it takes only about 2 minutes to recover the IP address belonging to a given pseudonym.
 
-![Practical costs of attacks against hash function pseudonymisation](/images/practical-costs.png)
+#### Table 5: Practical costs of attacks against hash function pseudonymisation
+
+| IP class | Number of possible IPs | Time of exhaustive search |Dictionary size |
+| ------------- | ------------- | ------------- | ------------- |
+| 145.254.160.X  | 256  | 200ms | 8KB  |
+| 145.254.X.X  | 65536  | 200ms  | 2MB  |
+| 145.X.X.X  | 16777216  | 2s  | 512MB |
+| X.X.X.X  | 4294967296 | 2min16s  | 128GB |
 
 Furthermore, let us assume that the adversary wishes to determine if a pseudonym corresponds to a special address. This discrimination attack does not need to be performed on the 232 possible IP addresses but only on the 588,518,401 possible special IP addresses. 
 
