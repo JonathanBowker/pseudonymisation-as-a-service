@@ -325,14 +325,18 @@ While the choice of the pseudonymisation technique is essential, the policy (or 
 ### 5.2.1 Deterministic pseudonymisation 
 In all the databases and each time it appears, *𝐼𝑑* is always replaced by the same pseudonym *𝑝𝑠𝑒𝑢𝑑𝑜*. It is consistent within a database and between different databases. The first step to implement this policy is to extract the list of unique identifiers contained in the database. Then, this list is mapped to the pseudonyms and finally the identifiers are substituted to the pseudonyms in the database (see Figure 8).
 
-![Deterministic pseudonymisation](/images/deterministic.png)
+#### Figure 8: Deterministic pseudonymisation
+
+![Deterministic pseudonymisation](/images/deterministic.jpg)
 
 All techniques mentioned in 5.1 can be directly used to implement deterministic pseudonymisation.
 
 ### 5.2.2 Document-randomized pseudonymisation
 Each time *𝐼𝑑* appears in a database, it is substituted with a different pseudonym (*𝑝𝑠𝑒𝑢𝑑𝑜1, 𝑝𝑠𝑒𝑢𝑑𝑜2,...*). However, *𝐼𝑑* is always mapped to the same collection of (*𝑝𝑠𝑒𝑢𝑑𝑜1, 𝑝𝑠𝑒𝑢𝑑𝑜2*) in the dataset *𝐴* and *𝐵*.
 
-![Document-randomized pseudonymisation](/images/document-randomised.png.png)
+#### Figure 9: Document-randomized pseudonymisation
+
+![Document-randomized pseudonymisation](/images/document-randomised.jpg)
 
 The pseudonymisation is only consistent between different databases in this case. The mapping table is created this time using all the identifiers contained in the database. Each occurrence of a given identifier (i.e., Alice in Figure 9) is treated independently.
 
@@ -340,15 +344,22 @@ The pseudonymisation is only consistent between different databases in this case
 
 Finally, for any occurrences of *𝐼𝑑* within a database *𝐴* or *𝐵*, *𝐼𝑑* is replaced by a different pseudonym (*𝑝𝑠𝑒𝑢𝑑𝑜1, 𝑝𝑠𝑒𝑢𝑑𝑜2*). This case is fully-randomized pseudonymisation. This policy can be viewed as a further extension of document randomized pseudonymisation. In fact, the two policies have the same behaviour when they are applied on a single document. However, if the same document is pseudonymised twice with fully-randomized pseudonymisation, two different outputs are obtained. With document-randomized pseudonymisation, the same output would have been obtained twice. In other words, in document-randomized pseudonymisation the randomness is selective (e.g. only for Alice), whereas in fully-randomized pseudonymisation randomness is global (it applies to any record).
 
-
-
 ## 5.3 CHOOSING A PSEUDONYMISATION TECHNIQUE AND POLICY
 
 The choice of a pseudonymisation technique and policy depends on different parameters, primarily the data protection level and the utility of the pseudonymised dataset (that the pseudonymisation entity wishes to achieve). In terms of protection, as discussed in the previous sections, RNG, message authentication codes and encryption are stronger techniques as they thwart by design exhaustive search, dictionary search and guesswork. Still, utility requirements might lead the pseudonymisation entity towards a combination of different approaches or variations of a selected approach. Similarly, with regard to pseudonymisation policies, fully-randomized pseudonymisation offers the best protection level but prevents any comparison between databases. Document-randomized and deterministic functions provide utility but allow linkability between records. Specific solutions might be applicable, depending on the identifiers that need to be pseudonymised (see Sections 6 and 7 for more specific examples).
 
 In addition, the pseudonymisation entity may be concerned by the complexity associated to a certain scheme in terms of implementation and scalability: is it simple to apply pseudonymisation to the identifiers and does pseudonymisation impact the database size?
 
-![CHOOSING A PSEUDONYMISATION TECHNIQUE AND POLICY](/images/comparisons.png.png)
+#### Table 3: Comparison of different techniques in terms of flexibility (identifier format) and pseudonym size
+
+| Method | Identifier Size | Pseudonym Size m in Bits |
+| ------------- | ------------- | ------------- |
+| Counter  | Any  | 𝑚=𝑙𝑜𝑔2k  |
+| Random Number Generator  | Any  | 𝑚 ≫2𝑙𝑜𝑔2𝑘  |
+| Hash function  | Any  | Fixed or 𝑚 ≫2𝑙𝑜𝑔2𝑘  |
+| Message Auth. Codes  | Any  | Fixed or 𝑚 ≫2𝑙𝑜𝑔2𝑘  |
+| Encryption  | Fixed2  | Fixed or same as identifier  |
+
 
 Most solutions can be applied on identifiers of variable size except for certain choices in the case of encryption. The size of the pseudonym depends on *𝑘*, the number of the identifiers contained in the database. For random number generator, hash function and message authentication code, there is a probability of collision: the size of the pseudonym must be chosen carefully (see birthday paradox). Hash functions and message authentication codes are suitably designed so as to ensure that the digest size prevents any risks of collision. 
 
