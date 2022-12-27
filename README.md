@@ -10,7 +10,7 @@ Pseudonymisation techniques have their own well understood and intrinsic propert
 
 **Advanced Analytica can provide practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.**
 
-# 1. INTRODUCTION TO THE PSEUDONYMISATION SERVICE
+# 1. INTRODUCTION
 
 ## 1.1 BACKGROUND
 Pseudonymisation is a well-known de-identification process that has gained additional attention following the adoption of EU and UK GDPR, where it is referenced as both a security and data protection by design mechanism. **In addition, in the GDPR context, pseudonymisation can motivate the relaxation, to a certain degree, of data controllers’ legal obligations if properly applied.**
