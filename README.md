@@ -40,7 +40,7 @@ The outline of the service is as follows:
 
 Our Pseudonymisation service focuses on analysing technical solutions for the implementation of robust GDPR compliance programmes, privacy by design and security of personal data processing.
 
-# 2. GLOSSARY AND DEFINITIONS 
+# 2. DEFINITIONS 
 We present a number of terms that we use as part of our service and are essential to project stakeholder. Some of these terms are based on GDPR, whereas others refer to technical standards or are explicitly defined for the purpose of service delivery.
 
 ### Personal Data
