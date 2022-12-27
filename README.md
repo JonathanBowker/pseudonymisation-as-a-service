@@ -98,12 +98,12 @@ Contrary to the previous case, in this Scenario the data controller again perfor
 
 ![SENDING PSEUDONYMISED DATA TO A PROCESSOR](/images/scenario-3.png)
 
-In this use case a data controller (Alpha Corp.) collecting data and performing the task of data pseudonymisation (in its role as pseudonymisation entity). The difference with previous Scenarios is that now this data controller forwards the pseudonymised data to a subsequent data processor (Beta Inc.), e.g. for statistical analysis, or persistent data storage. In this Scenario, the protection goal provided by data pseudonymisation can unfold: Beta Inc. does not
+In this scenario a data controller (Alpha Corp.) collecting data and performing the task of data pseudonymisation (in its role as pseudonymisation entity). The difference with previous Scenarios is that now this data controller forwards the pseudonymised data to a subsequent data processor (Beta Inc.), e.g. for statistical analysis, or persistent data storage. In this Scenario, the protection goal provided by data pseudonymisation can unfold: Beta Inc. does not
 learn the identifiers of the data subjects, thus is not directly able to re-identify the natural persons behind the data (assuming that no other attribute that could lead to re-identification is available to Beta Inc.). In this way, pseudonymisation protects the security of the data with regard to the processor.
 
 A variation of this Scenario could be the case where the pseudonymised data is not sent to a data processor but to another data controller (e.g. in the context of a legal obligation of the original controller or another legal basis).
 
-## 3.4 Scenario 4: PROCESSOR AS PSEUDONYMISATION ENTITY
+## 3.4 SCENARIO 4: PROCESSOR AS PSEUDONYMISATION ENTITY
 
 Another possible Scenario is the case where the task of pseudonymisation is assigned by the controller to a data processor (e.g. a cloud service provider that manages the pseudonymisation
 secret and/or arranges the relevant technical facilities).
