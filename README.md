@@ -75,57 +75,57 @@ Pseudonymisation plays an important role in GDPR as a security measure (art. 32 
 
 Furthermore, pseudonymisation (being itself a data minimisation technique) can contribute towards the principle of data minimisation under GDPR, for example in cases where the controller does not need to have access to the real identities of data subjects but only to their pseudonyms. Finally, another important benefit of pseudonymisation that should be carefully considered is that of data accuracy.
 
-## 3.1 SCENARIO 1: PSEUDONYMISATION FOR INTERNAL USE
-A common data pseudonymisation Scenario is when data are collected directly from the data subjects and pseudonymised by the data controller, for subsequent internal processing.
+## 3.1 scenario 1: PSEUDONYMISATION FOR INTERNAL USE
+A common data pseudonymisation scenario is when data are collected directly from the data subjects and pseudonymised by the data controller, for subsequent internal processing.
 
 ![PSEUDONYMISATION FOR INTERNAL USE](/images/scenario-1.png)
 
 In this Scenario, the data controller (Alpha Corp.) has the role of the pseudonymisation entity, as it performs the selection and assignment of pseudonyms to identifiers. It must be pointed out that the data subjects do not necessarily know nor learn their particular pseudonym, as the pseudonymisation secret (e.g. the pseudonymisation mapping table in this example), is known only to Alpha Corp. The role of pseudonymisation in this case is to enhance the security of personal data either for internal use (e.g. sharing between different units of the controller)11 or in the case of a
 security incident.
 
-## 3.2 SCENARIO 2: PROCESSOR INVOLVED IN PSEUDONYMISATION
+## 3.2 scenario 2: PROCESSOR INVOLVED IN PSEUDONYMISATION
 
-This Scenario is a variation of Scenario 1, where a data processor is also involved in the process by obtaining the identifiers from the data subjects (on behalf of the controller). However, the pseudonymisation is still performed by the controller.
+This scenario is a variation of scenario 1, where a data processor is also involved in the process by obtaining the identifiers from the data subjects (on behalf of the controller). However, the pseudonymisation is still performed by the controller.
 
 ![ PROCESSOR INVOLVED IN PSEUDONYMISATION](/images/scenario-2.png)
-In this Scenario, a dedicated data processor (Beta Inc.) is given the task to collect the identifiers from the data subjects and forward this information to a subsequent data controller (Alpha Corp.), which finally performs the pseudonymisation. The controller is again the pseudonymisation entity. An example for such a Scenario might be a cloud service provider that hosts data collection services on behalf of the data controller. Then, the controller still is in charge of
-applying data pseudonymisation prior to any subsequent processing. The goals for pseudonymisation are the same as in Scenario 1 (but this time a processor is also involved in
+In this Scenario, a dedicated data processor (Beta Inc.) is given the task to collect the identifiers from the data subjects and forward this information to a subsequent data controller (Alpha Corp.), which finally performs the pseudonymisation. The controller is again the pseudonymisation entity. An example for such a scenario might be a cloud service provider that hosts data collection services on behalf of the data controller. Then, the controller still is in charge of
+applying data pseudonymisation prior to any subsequent processing. The goals for pseudonymisation are the same as in scenario 1 (but this time a processor is also involved in
 the process).
 
-## 3.3 SCENARIO 3: SENDING PSEUDONYMISED DATA TO A PROCESSOR
+## 3.3 scenario 3: SENDING PSEUDONYMISED DATA TO A PROCESSOR
 
-Contrary to the previous Scenario, in this Scenario the data controller again performs the pseudonymisation but this time the processor is not involved in the process but only receives the pseudonymised data from the controller.
+Contrary to the previous Scenario, in this scenario the data controller again performs the pseudonymisation but this time the processor is not involved in the process but only receives the pseudonymised data from the controller.
 
 ![SENDING PSEUDONYMISED DATA TO A PROCESSOR](/images/scenario-3.png)
 
-In this Scenario a data controller (Alpha Corp.) collecting data and performing the task of data pseudonymisation (in its role as pseudonymisation entity). The difference with previous Scenarios is that now this data controller forwards the pseudonymised data to a subsequent data processor (Beta Inc.), e.g. for statistical analysis, or persistent data storage. In this Scenario, the protection goal provided by data pseudonymisation can unfold: Beta Inc. does not learn the identifiers of the data subjects, thus is not directly able to re-identify the natural persons behind the data (assuming that no other attribute that could lead to re-identification is available to Beta Inc.). In this way, pseudonymisation protects the security of the data with regard to the processor.
+In this scenario a data controller (Alpha Corp.) collecting data and performing the task of data pseudonymisation (in its role as pseudonymisation entity). The difference with previous Scenarios is that now this data controller forwards the pseudonymised data to a subsequent data processor (Beta Inc.), e.g. for statistical analysis, or persistent data storage. In this Scenario, the protection goal provided by data pseudonymisation can unfold: Beta Inc. does not learn the identifiers of the data subjects, thus is not directly able to re-identify the natural persons behind the data (assuming that no other attribute that could lead to re-identification is available to Beta Inc.). In this way, pseudonymisation protects the security of the data with regard to the processor.
 
-A variation of this Scenario could be the case where the pseudonymised data is not sent to a data processor but to another data controller (e.g. in the context of a legal obligation of the original controller or another legal basis).
+A variation of this scenario could be the case where the pseudonymised data is not sent to a data processor but to another data controller (e.g. in the context of a legal obligation of the original controller or another legal basis).
 
-## 3.4 SCENARIO 4: PROCESSOR AS PSEUDONYMISATION ENTITY
+## 3.4 scenario 4: PROCESSOR AS PSEUDONYMISATION ENTITY
 
-Another possible Scenario is the case where the task of pseudonymisation is assigned by the controller to a data processor (e.g. a cloud service provider that manages the pseudonymisation secret and/or arranges the relevant technical facilities).
+Another possible scenario is the case where the task of pseudonymisation is assigned by the controller to a data processor (e.g. a cloud service provider that manages the pseudonymisation secret and/or arranges the relevant technical facilities).
 
 ![PROCESSOR AS PSEUDONYMISATION ENTITY](images/scenario-4.png)
 
 This shows a case where the personal data are sent by the data subjects to a data processor (Beta Inc), which subsequently performs the pseudonymisation, thus acting as the pseudonymisation entity on behalf of the controller (Alpha Corp). The pseudonymised data is then forwarded to the data controller. In this particular Scenario, only the pseudonymised data are stored on the controller’s side. In this way, security at controller’s level is enhanced through data de-identification (e.g. in case of data breach at controller’s side).Still, in all cases the controller is able to re-identify the data subjects through the data processor. Moreover, security at processor’s side becomes of great importance. 
 
-A variation of this Scenario could be a case where several different processors are involved in the pseudonymisation process as a sequence of pseudonymisation entities (chain of processors).
+A variation of this scenario could be a case where several different processors are involved in the pseudonymisation process as a sequence of pseudonymisation entities (chain of processors).
 
 
-## 3.5 SCENARIO 5: THIRD PARTY AS PSEUDONYMISATION ENTITY
+## 3.5 scenario 5: THIRD PARTY AS PSEUDONYMISATION ENTITY
 
-In this Scenario the pseudonymisation is performed by a third party (not a processor) who subsequently forwards the data to the controller. Contrary to the Scenario 4, the controller in this Scenario does not have access to the data subjects’ identifiers (as the third party is not under the control of the data controller). 
+In this scenario the pseudonymisation is performed by a third party (not a processor) who subsequently forwards the data to the controller. Contrary to the scenario 4, the controller in this scenario does not have access to the data subjects’ identifiers (as the third party is not under the control of the data controller). 
 
 ![THIRD PARTY AS PSEUDONYMISATION ENTITY](/images/scenario-5.png)
 
-This shows a case where the personal data are sent to a third party (Gamma SE), which subsequently performs the pseudonymisation, thus acting as the pseudonymisation entity. The pseudonymised data is then forwarded to the data controller (Alpha Corp). In this Scenario, the data controller cannot directly or indirectly link individual data records to data subjects itself. In this way, security and data protection at controller’s level are enhanced in accordance with the principle of data minimisation. Such Scenario can be applicable in cases where the controller does not need to have access to the identities of the data subjects (but only to the pseudonyms).
+This shows a case where the personal data are sent to a third party (Gamma SE), which subsequently performs the pseudonymisation, thus acting as the pseudonymisation entity. The pseudonymised data is then forwarded to the data controller (Alpha Corp). In this Scenario, the data controller cannot directly or indirectly link individual data records to data subjects itself. In this way, security and data protection at controller’s level are enhanced in accordance with the principle of data minimisation. Such scenario can be applicable in cases where the controller does not need to have access to the identities of the data subjects (but only to the pseudonyms).
 
-This Scenario could be very relevant to cases of joint controllership, where one of the controllers is performing the pseudonymisation (acting as the trusted third party - TTP in figure 5), and the other one only receives the pseudonymised data for further processing. 
+This scenario could be very relevant to cases of joint controllership, where one of the controllers is performing the pseudonymisation (acting as the trusted third party - TTP in figure 5), and the other one only receives the pseudonymised data for further processing. 
 
-An interesting variation of this Scenario (that would require further analysis) could be the case where the TTP is distributed over more than one entities, which can only jointly create and revert pseudonyms (or possibly based on a secret sharing scheme), so that one does not have to put trust only into a single entity.
+An interesting variation of this scenario (that would require further analysis) could be the case where the TTP is distributed over more than one entities, which can only jointly create and revert pseudonyms (or possibly based on a secret sharing scheme), so that one does not have to put trust only into a single entity.
 
-## 3.6 SCENARIO 6: DATA SUBJECT AS PSEUDONYMISATION ENTITY
+## 3.6 scenario 6: DATA SUBJECT AS PSEUDONYMISATION ENTITY
 
 This is a special case of pseudonymisation where the pseudonyms are created by the data subjects themselves as part of the overall pseudonymisation process.
 
@@ -148,14 +148,14 @@ Understanding these topics is an essential element for further analysing the use
 According to the common understanding of the term in IT security, an insider is an adversary
 with specific knowledge, capabilities, or permissions (with regard to the target of the
 adversary). In the context of pseudonymisation, this implies that the adversary is in a position to gain information about the pseudonymisation secret and/or other relevant significant information.
-For example, considering the Scenarios in Section 3, an insider could be on the controller’s side (e.g. an employee working for the controller) under Scenarios 1, 2, 3 and 4. It could also rest on the processor’s side (e.g. a malicious employee of a contractor) under Scenarios 2 and 4. Last, in the case of Scenario 5, the insider adversary could lie within the trusted third party (acting in this Scenario as the pseudonymisation entity). By default third parties that might legitimately have access to the personal data (e.g. a supervisory or law enforcement authority) are not considered as adversaries.
+For example, considering the Scenarios in Section 3, an insider could be on the controller’s side (e.g. an employee working for the controller) under Scenarios 1, 2, 3 and 4. It could also rest on the processor’s side (e.g. a malicious employee of a contractor) under Scenarios 2 and 4. Last, in the case of scenario 5, the insider adversary could lie within the trusted third party (acting in this scenario as the pseudonymisation entity). By default third parties that might legitimately have access to the personal data (e.g. a supervisory or law enforcement authority) are not considered as adversaries.
 
 ## 4.2 EXTERNAL ADVERSARIES
 In contrast to the insider adversary, an external adversary does not have direct access to the pseudonymisation secret or other relevant information. However, this type of adversary may have access to a pseudonymised dataset, and may also be able to perform the task of
 pseudonymisation to arbitrary input data values chosen by the adversary (e.g. by having access to a black box implementation of the pseudonymisation function, or by being able to force the
 pseudonymisation entity to pseudonymise arbitrary inputs). The goal of an external adversary is to increase his or her own information on the pseudonymised dataset, e.g. by learning the identity behind a given pseudonym (and acquiring further information on that identity from the additional data found in the dataset for the given pseudonym).
 
-Considering the Scenarios of Section 3, by definition any actor who acts maliciously in all Scenarios and is not part of the pseudonymisation entity or working on behalf of the pseudonymisation entity should be considered as an external adversary.  A (malicious) data could take the role of an external adversary under Scenario 5 or 6. A (malicious) data processor could also take this role under Scenario 3.
+Considering the Scenarios of Section 3, by definition any actor who acts maliciously in all Scenarios and is not part of the pseudonymisation entity or working on behalf of the pseudonymisation entity should be considered as an external adversary.  A (malicious) data could take the role of an external adversary under scenario 5 or 6. A (malicious) data processor could also take this role under scenario 3.
 
 ## 4.3 GOALS OF ATTACK ON PSEUDONYMISATION 
 Depending on the context and the pseudonymisation method, the adversary can have different goals that he or she wants to achieve against pseudonymised data, i.e. retrieval of the pseudonymisation secret, complete re-identification, or discrimination. While most of the examples described in the next paragraphs focus on uncovering the “real” identity of the data subjects, it should be noted that a successful attack is not (only) a matter of reverse engineering, but more the capability of singling out a specific individual from a group (even if the “real” identity is not revealed).
@@ -324,7 +324,7 @@ Most methods described previously require the pseudonymisation entity to keep th
 
 ## 5.5 PROTECTION OF THE PSEUDONYMISATION SECRET
 
-In order for pseudonymisation to be efficient, the pseudonymisation entity must always protect the pseudonymisation secret by proper technical and organisational measures. This clearly depends on the specific pseudonymisation Scenario (see Section 3). 
+In order for pseudonymisation to be efficient, the pseudonymisation entity must always protect the pseudonymisation secret by proper technical and organisational measures. This clearly depends on the specific pseudonymisation scenario (see Section 3). 
 
 Firstly, the pseudonymisation secret must be isolated from the dataset, i.e. the pseudonymisation secret and the dataset must never be handled in the same file (otherwise, it will be too easy for an adversary to recover the identifiers). 
 
@@ -424,7 +424,7 @@ Starting from this simple case, depending on the level of data protection and ut
 
 ![Examples of email address pseudonymisation with RNG - various utility levels](/images/email-complex-mapping.png)
 
-The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation Scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
+The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
 
 ## 7.2 CRYPTOGRAPHIC HASH FUNCTION
 
@@ -473,7 +473,7 @@ Starting from this simple case, depending on the level of data protection and ut
 
 ![Examples of email address pseudonymisation with RNG - various utility levels](/images/email-complex-mapping.png)
 
-The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation Scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
+The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
 
 ## 7.2 CRYPTOGRAPHIC HASH FUNCTION
 
@@ -522,11 +522,11 @@ As can be seen from the previous two use cases in Section 6 and 7, pseudonymisat
 
 ## 8.1 A MOCK-UP EXAMPLE
 
-For the sake of discourse, let us assume an example Scenario that is very similar to commonly found real-world Scenarios: an online social network. The imaginary operator, SocialNetwork Inc. (dubbed SN hereafter), acts as the data controller, and allows its users (assumed to be human individuals only) to register for an account that is stored in the datacentre of SN. With that account, users can make use of a set of functions that e.g. allow linking to other users, organisations, or topics of interest. On registration, users of SN have to provide their real name as first name and last name, nickname, their birthdate and gender, a set of optional personal information (location, interests, biometrics, etc.), as well as a valid e-mail address. Whenever the users access any of the services of SN, their interaction is logged and added to their user profile – including timestamp and IP address of access.
+For the sake of discourse, let us assume an example scenario that is very similar to commonly found real-world Scenarios: an online social network. The imaginary operator, SocialNetwork Inc. (dubbed SN hereafter), acts as the data controller, and allows its users (assumed to be human individuals only) to register for an account that is stored in the datacentre of SN. With that account, users can make use of a set of functions that e.g. allow linking to other users, organisations, or topics of interest. On registration, users of SN have to provide their real name as first name and last name, nickname, their birthdate and gender, a set of optional personal information (location, interests, biometrics, etc.), as well as a valid e-mail address. Whenever the users access any of the services of SN, their interaction is logged and added to their user profile – including timestamp and IP address of access.
 
 In order to improve compliance with the GDPR, the management of SN decided to pseudonymise the IP addresses in the access logs according to the techniques discussed in Section 6. The remaining information is kept in plain text, as it is needed to be presented to the user on the websites of SN where necessary, or to perform checks and validations (e.g. the birthdate is needed to calculate the age and verify the user is older than 16 years when accessing special services). Pseudonymisation of the e-mail address is not feasible here, as SN needs to be able to send e-mails with notifications (and other contents) to the users. 
 
-Assume a second imaginary organisation, Online Security Services Corp. (dubbed OSS hereafter), who acts as a data processor on behalf of SN, with the task of maintaining storage and security services for parts of the user database of SN. In this position, OSS is having access to the pseudonymised log-files of SN, i.e. to the pseudonymised IP addresses and timestamps of all website accesses, but not to the original IP addresses themselves. In such a setting, OSS cannot re-identify the users belonging to an IP address because that data is stored in a different database at SN that is not accessible to OSS. Thus, with respect to pseudonymisation, the Scenario from Section 3.3 appears, with SN as data controller and OSS as subsequent data processor.
+Assume a second imaginary organisation, Online Security Services Corp. (dubbed OSS hereafter), who acts as a data processor on behalf of SN, with the task of maintaining storage and security services for parts of the user database of SN. In this position, OSS is having access to the pseudonymised log-files of SN, i.e. to the pseudonymised IP addresses and timestamps of all website accesses, but not to the original IP addresses themselves. In such a setting, OSS cannot re-identify the users belonging to an IP address because that data is stored in a different database at SN that is not accessible to OSS. Thus, with respect to pseudonymisation, the scenario from Section 3.3 appears, with SN as data controller and OSS as subsequent data processor.
 
 ## 8.2 DATA-INHERENT INFORMATION 
 At first glance, OSS is not able to break the pseudonymisation of IP addresses performed by SN, if it is assumed that SN utilised a sufficiently strong pseudonymisation function. Depending on the pseudonymisation function, and especially on the pseudonymisation policy (cf. Section 5.2), OSS might still be able to infer whether a certain pseudonym occurs frequently, rarely, only once, or not at all in the database. This by itself might not suffice to uncover an identity, but it can already be utilised to identify frequently accessing users. If an access record contains a pseudonym with a high frequency of occurrence, OSS can infer that this probably is a heavy user of SN. Vice versa, if a pseudonym occurs for the first time in the dataset, most likely this user just registered for SN and accessed its user account for the first time, or the IP address of a registered user changed (which can happen frequently, making all of these observations become probabilistic)
@@ -562,7 +562,7 @@ Every information that both these profiles have in common must thereby hold true
 Still, it should be noted that the problem of additional available information is “orthogonal” to pseudonymisation, while being primarily a data protection by design issue. Therefore, as also mentioned earlier in the report, on top of pseudonymisation, one can consider the injection of noise to the arguments of the pseudonymisation function, or the use of generalization, in order to make brute force attacks less effective (see also Section 5.6). This degree of freedom is a way to further strengthen pseudonymisation and protect against relevant attacks.
 
 ## 8.6 LINKAGE AMONG MULTIPLE DATA SOURCES 
-Beyond the above Scenario of SN and OSS, an even more challenging Scenario of pseudonymisation emerges when considering not just two organisations (SN and OSS) to participate, but when assuming a large-scale marketplace of pseudonymised data. In such Scenarios, multiple different organisations share pseudonymised datasets of personal data, with the intention of allowing some utility (e.g. creating profiles for marketing purposes) while protecting the identity of the data subjects themselves. The often-heard argument in such Scenarios is that the pseudonymisation prevents re-identification of data subjects, thus legitimising such data sharing. This report does not argue for or against legitimacy of sharing of pseudonymised datasets, but discusses the issues of properly applying pseudonymisation in such a setting. 
+Beyond the above scenario of SN and OSS, an even more challenging scenario of pseudonymisation emerges when considering not just two organisations (SN and OSS) to participate, but when assuming a large-scale marketplace of pseudonymised data. In such Scenarios, multiple different organisations share pseudonymised datasets of personal data, with the intention of allowing some utility (e.g. creating profiles for marketing purposes) while protecting the identity of the data subjects themselves. The often-heard argument in such Scenarios is that the pseudonymisation prevents re-identification of data subjects, thus legitimising such data sharing. This report does not argue for or against legitimacy of sharing of pseudonymised datasets, but discusses the issues of properly applying pseudonymisation in such a setting. 
 
 Assume a set of companies A to E, who all collect personal data on their users, such as the data gathered by SN in the previous example. Linkage of user profiles of different companies could be performed by comparing the e-mail addresses utilised by the respective users. If two user profiles found at, say, companies B and D, registered with exactly the same e-mail address, they most likely belong to the same data subject. However, obviously, the e-mail address itself is personal data, as was discussed in Section 7. It thus becomes necessary to apply pseudonymisation to the e-mail addresses in the datasets of B and D before sharing them among A, B, C, D, and E. 
 
@@ -570,7 +570,7 @@ The challenge here is that all participants want to keep the utility of the pseu
 
 As discussed in Section 7, in such Scenarios, the use of weak pseudonymisation functions (like plain hashing) allows for trivial brute-force, guesswork, or probability distribution attacks, as discussed above. Enriched with the additional (non-personal) data contained in the shared data records, and maybe with some additional background knowledge, these attacks must be considered practical and largely successful in many Scenarios. Even worse, the more companies share information on a particular data subject’s attributes, the more information is available to an intentional adversary against the pseudonymisation utilised, hence the more likely a success of such attacks is. 
 
-Privacy risks may occur even in the more general Scenario that the organisations apply different (and even strong) pseudonymisation techniques to their users’ identifiers (e.g. e-mail or IP address). Let us assume that the aforementioned set of companies A to E provide such pseudonymous data to OSS, in order to obtain, e.g., statistical services. If the provided pseudonyms are accompanied with information on the users browser/device as described in Section 8.4 (browser settings, operating system etc.), and recalling that any such device information is expected to be unique for each device33, then OSS may trivially link different pseudonyms, provided from different companies, corresponding to the same user.
+Privacy risks may occur even in the more general scenario that the organisations apply different (and even strong) pseudonymisation techniques to their users’ identifiers (e.g. e-mail or IP address). Let us assume that the aforementioned set of companies A to E provide such pseudonymous data to OSS, in order to obtain, e.g., statistical services. If the provided pseudonyms are accompanied with information on the users browser/device as described in Section 8.4 (browser settings, operating system etc.), and recalling that any such device information is expected to be unique for each device33, then OSS may trivially link different pseudonyms, provided from different companies, corresponding to the same user.
 
 
 ## 8.7 COUNTERMEASURES 
@@ -591,7 +591,7 @@ Following the analysis in this report, the best approach to pseudonymisation is 
 
 - Design the resulting large-scale pseudonymisation function in such a way that the pseudonymised dataset keeps only the type of utility necessary for the purpose of processing, but removes all other utility from the pseudonymised dataset. 
 
-For the example Scenario in this Section, SN may utilise a pseudonymisation scheme that pseudonymises not just the IP addresses themselves, but all possible combinations of IP addresses and timestamps. Then, linking the timestamp to any external data source becomes infeasible as this information is no longer available to OSS. For a successful re-identification, OSS would need to know (or guess) the exact combination of IP address and timestamp. In general, pseudonymisation of a combination of data inputs cannot reasonably be uncovered without knowing (or guessing) all of the input data in plaintext. 
+For the example scenario in this Section, SN may utilise a pseudonymisation scheme that pseudonymises not just the IP addresses themselves, but all possible combinations of IP addresses and timestamps. Then, linking the timestamp to any external data source becomes infeasible as this information is no longer available to OSS. For a successful re-identification, OSS would need to know (or guess) the exact combination of IP address and timestamp. In general, pseudonymisation of a combination of data inputs cannot reasonably be uncovered without knowing (or guessing) all of the input data in plaintext. 
 
 For this setting, such a pseudonymisation would block any attempt of OSS to uncover a given pseudonym in a much more robust way. 
 
