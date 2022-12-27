@@ -421,7 +421,7 @@ Taking into consideration the aforementioned characteristic, cryptographic hash 
 
 #### Table 5: Practical costs of attacks against hash function pseudonymisation
 
-| IP class | Number of possible IPs | Time of exhaustive search |Dictionary size |
+| IP class | Number of possible IPs | Time of exhaustive search | Dictionary size |
 | ------------- | ------------- | ------------- | ------------- |
 | 145.254.160.X  | 256  | 200ms | 8KB  |
 | 145.254.X.X  | 65536  | 200ms  | 2MB  |
@@ -453,19 +453,19 @@ The choice of the pseudonymisation mode has a strong impact on the utility and o
 | Packet | Source | Destination |
 | ------------- | ------------- | ------------- |
 | Packet 1  | 145.254.160.237  | 65.208.228.223 |
-| Packet 2  | 65.208.228.223  | 145.254.160.237  |
-| Packet 3  | 145.254.160.237  | 65.208.228.223  |
-| Packet 4  | 145.254.160.237 | 65.208.228.223  |
-| Packet 5  | 65.208.228.223 | 145.254.160.237  |
+| Packet 2  | 65.208.228.223  | 145.254.160.237 |
+| Packet 3  | 145.254.160.237  | 65.208.228.223 |
+| Packet 4  | 145.254.160.237 | 65.208.228.223 |
+| Packet 5  | 65.208.228.223 | 145.254.160.237 |
 
 In the example mentioned above, let us apply deterministic pseudonymisation using an RNG for instance. Each IP address is associated to a unique pseudonym. The mapping table obtained in our case is given in Table 7. After deterministic pseudonymisation, Table 8 is obtained.
 
 #### Table 7: Mapping table for deterministic pseudonymisation
 
 | IP address | Pseudonym |
-| ------------- | ------------- | ------------- |
-| 145.254.160.237  | 238  |
-| 65.208.228.223  | 47 |
+| ------------- | ------------- |
+| 145.254.160.237 | 238  |
+| 65.208.228.223 | 47 |
 
 Let us compare the information that can be extracted from the original network trace (Table 6) and Table 8. As can be seen from this comparison, from both traces (original and pseudonymised), it is possible to infer the total number of IP addresses involved and how many packets were sent by each address during the communication. Therefore, while the IP addresses in Table 8 are pseudonymised, the same level of statistical analysis (and, thus, utility) is possible on the IP addresses. 
 
@@ -486,7 +486,7 @@ As shown from Table 10, while it was possible in Table 6 and Table 8 to count 2 
 #### Table 9: Mapping table for document-randomized pseudonymisation
 
 | IP address | Pseudonym |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- |
 | 145.254.160.237 | 39,71,48,136,120  |
 | 65.208.228.223 | 23,30,60,160,231 |
 
@@ -545,13 +545,13 @@ Starting from this simple case, depending on the level of data protection and ut
 #### Table 14: Examples of email address pseudonymisation with RNG - various utility levels
 
 | E-mail address | Pseudonym (RNG) retaining the info on identical domains | Pseudonym (RNG) retaining also the info on identical country/extension | Pseudonym (RNG) retaining the info on identical local parts and domains | Pseudonym (RNG) retaining the info on identical country/extension, domains and local parts |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| alice@abc.eu | 328  | 10 | 10 | 10 | 10 |
-| bob@wxyz.com | 105  | 11 | 10 | 10 | 10 |
-| eve@abc.eu | 209 | 12 | 10 | 10 | 10 |
-| john@qed.edu | 83 | 13 | 10 | 10 | 10 |
-| alice@wxyz.co | 512 | 14 | 10 | 10 | 10 |
-| mary@clm.eu | 289 | 15 | 10 | 10 | 10 |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| alice@abc.eu | 328  | 10 | 10 | 10 |
+| bob@wxyz.com | 105  | 11 | 10 | 10 |
+| eve@abc.eu | 209 | 12 | 10 | 10 |
+| john@qed.edu | 83 | 13 | 10 | 10 |
+| alice@wxyz.co | 512 | 14 | 10 | 10 |
+| mary@clm.eu | 289 | 15 | 10 | 10 |
 
 The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
 
