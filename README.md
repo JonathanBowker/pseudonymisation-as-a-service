@@ -1,8 +1,8 @@
 # Pseudonymisation-as-a-Service
-## Advisory services for pseudonymisation techniques and best practiceson, and shaping technology according to data protection and privacy provisions. 
+## Pseudonymisation advisory services for state of the art techniques and best practiceson, and shaping technology according to data protection and privacy requirements. 
 
-### Taking a risk-based approach to pseudonymisation
-Pseudonymisation techniques have their own well understood and intrinsic properties but this does not mean the selection and implementation of an appropriate technique is a trivial task. We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability.
+### Risk-based approach to pseudonymisation
+Pseudonymisation techniques have their own well understood and intrinsic properties but this does not mean the selection and implementation of an appropriate pseudonymisation technique is a simple and trivial task. We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability.
 
 **Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.**
 
