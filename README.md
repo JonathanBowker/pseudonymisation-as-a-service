@@ -43,33 +43,47 @@ Our Pseudonymisation service focuses on analysing technical solutions for the im
 # 2. GLOSSARY AND DEFINITIONS 
 We present a number of terms that we use as part of our service and are essential to project stakeholder. Some of these terms are based on GDPR, whereas others refer to technical standards or are explicitly defined for the purpose of service delivery.
 
-**Personal Data** refers to any information relating to an identified or identifiable natural person (data subject); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person (GDPR, art. 4(1)).
+### Personal Data
+Refers to any information relating to an identified or identifiable natural person (data subject); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person (GDPR, art. 4(1)).
 
-**Data Controller** or **Controller** is the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data (GDPR, art. 4(7)).
+### Data Controller or Controller
+Refers to a natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data (GDPR, art. 4(7)).
 
-**Data Processor** or **Processor** is the natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller (GDPR, art. 4(8)).
+### Data Processor or Processor
+Refers to a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller (GDPR, art. 4(8)).
 
-**Pseudonymisation** is the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person (GDPR, art. 4(5)).
+### Pseudonymisation
+Refers to the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person (GDPR, art. 4(5)).
 
-**Anonymisation** is a process by which personal data is irreversibly altered in such a way that a data subject can no longer be identified directly or indirectly, either by the data controller alone or in collaboration with any other party (ISO/TS 25237:2017).
+### Anonymisation
+Refers to a process by which personal data is irreversibly altered in such a way that a data subject can no longer be identified directly or indirectly, either by the data controller alone or in collaboration with any other party (ISO/TS 25237:2017).
 
-**Identifier** is a value that identifies an element within an identification scheme. A unique identifier is only one element associated with personal data.
+### Identifier
+Refers to a value that identifies an element within an identification scheme. A unique identifier is only one element associated with personal data.
 
-**Pseudonym**, also known as cryptonym or just nym, is a piece of information associated to an identifier of an individual or any other kind of personal data (e.g. location data). Pseudonyms may have different degrees of linkability (to the original identifiers). The degree of linkability of different pseudonym types is important to consider for evaluating the strength of pseudonyms but also for the design of pseudonymous systems where a certain degree of linkability may be desired (e.g. when analysing pseudonymous log files or for reputation systems).
+### Pseudonym
+Also known as cryptonym or just nym, is a piece of information associated to an identifier of an individual or any other kind of personal data (e.g. location data). Pseudonyms may have different degrees of linkability (to the original identifiers). The degree of linkability of different pseudonym types is important to consider for evaluating the strength of pseudonyms but also for the design of pseudonymous systems where a certain degree of linkability may be desired (e.g. when analysing pseudonymous log files or for reputation systems).
 
-**Pseudonymisation Function** , denoted *𝑃*, is a function that substitutes an Identifier *𝐼𝑑* by a Pseudonym *𝑝𝑠𝑒𝑢𝑑𝑜*. 
+### Pseudonymisation Function
+Denoted *𝑃*, refers to a function that substitutes an Identifier *𝐼𝑑* by a Pseudonym *𝑝𝑠𝑒𝑢𝑑𝑜*. 
 
-**Pseudonymisation secret**, denoted *𝑠* is an (optional) parameter of a pseudonymisation function *𝑃*. The function *𝑃* cannot be evaluated/computed if *𝑠* is unknown. Recovery function, denoted *𝑅*, is a function that substitutes a Pseudonym *𝑝𝑠𝑒𝑢𝑑𝑜* by the Identifier *𝐼𝑑* using the pseudonymisation secret *𝑠*. It inverts the pseudonymisation function *𝑃*. 
+### Pseudonymisation secret
+Denoted *𝑠* refers to an (optional) parameter of a pseudonymisation function *𝑃*. The function *𝑃* cannot be evaluated/computed if *𝑠* is unknown. Recovery function, denoted *𝑅*, is a function that substitutes a Pseudonym *𝑝𝑠𝑒𝑢𝑑𝑜* by the Identifier *𝐼𝑑* using the pseudonymisation secret *𝑠*. It inverts the pseudonymisation function *𝑃*. 
 
-**Pseudonymisation Mapping Table** is a representation of the action of the pseudonymisation function. It associates each identifier to its corresponding pseudonym. Depending on the pseudonymisation function *𝑃*, the pseudonymisation mapping table may be the pseudonymisation secret or part of it. 
+### Pseudonymisation Mapping Table
+Refers a representation of the action of the pseudonymisation function. It associates each identifier to its corresponding pseudonym. Depending on the pseudonymisation function *𝑃*, the pseudonymisation mapping table may be the pseudonymisation secret or part of it. 
 
-**Pseudonymisation Entity** is the entity responsible of processing identifiers into pseudonyms using the pseudonymisation function. It can be a data controller, a data processor (performing pseudonymisation on behalf of a controller), a trusted third party (performing pseudonymisation on behalf of a controller as a service)o r a data subject, depending on the pseudonymisation Scenario. It should be stressed that, following this definition, the role of the pseudonymisation entity is strictly relevant to the practical implementation of pseudonymisation under a specific Scenario. The responsibility for the whole pseudonymisation process (and for the whole data processing operation in general) almost always rests with the controller. 
+### Pseudonymisation Entity
+Refers to the entity responsible of processing identifiers into pseudonyms using the pseudonymisation function. It can be a data controller, a data processor (performing pseudonymisation on behalf of a controller), a trusted third party (performing pseudonymisation on behalf of a controller as a service)o r a data subject, depending on the pseudonymisation Scenario. It should be stressed that, following this definition, the role of the pseudonymisation entity is strictly relevant to the practical implementation of pseudonymisation under a specific Scenario. The responsibility for the whole pseudonymisation process (and for the whole data processing operation in general) almost always rests with the controller. 
 
-**Identifier Domain / Pseudonym Domain** refer to the domains from which the identifier and the Pseudonym are drawn. They can be different or the same domains. They can be finite or infinite domains. 
+### Identifier Domain / Pseudonym Domain
+Refers to the domains from which the identifier and the Pseudonym are drawn. They can be different or the same domains. They can be finite or infinite domains. 
 
-**Adversary** is an entity that tries to break pseudonymisation and link a pseudonym (or a pseudonymised dataset) back to the pseudonym holder(s). Re-identification attack is an attack to  performed by an adversary that aims to re-identify the holder of a Pseudonym.
+### Adversary
+Refers to an entity that tries to break pseudonymisation and link a pseudonym (or a pseudonymised dataset) back to the pseudonym holder(s). Re-identification attack is an attack to  performed by an adversary that aims to re-identify the holder of a Pseudonym.
 
-**Re-identification Attack** is an attack to pseudonymisation performed by an Adversary that aims to re-identify the holder of a pseudonym.
+### Re-identification Attack
+Refers to an attack on pseudonymised data performed by an Adversary that aims to re-identify the holder of a Pseudonym.
 
 # 3. PSEUDONYMISATION SCENARIOS
 Pseudonymisation plays an important role in GDPR as a security measure (art. 32 GDPR), as well as in the context of data protection by design (art. 25 GDPR). The most obvious benefit of pseudonymisation is to hide the identity of the data subjects from any third party (i.e. other than the pseudonymisation entity) in the context of a specific data processing operation. Still, pseudonymisation can go beyond hiding real identities into supporting the data protection goal of unlinkability, i.e. reducing the risk that privacy-relevant data can be linked across different data processing domains. 
