@@ -93,6 +93,8 @@ Furthermore, pseudonymisation (being itself a data minimisation technique) can c
 ## 3.1 PSEUDONYMISATION FOR INTERNAL USE
 A common data pseudonymisation scenario is when data are collected directly from the data subjects and pseudonymised by the data controller, for subsequent internal processing.
 
+### Figure 1 -  Pseudonymisation example Scenario 1
+
 ![PSEUDONYMISATION FOR INTERNAL USE](/images/scenario-1.png)
 
 In this Scenario, the data controller (Alpha Corp.) has the role of the pseudonymisation entity, as it performs the selection and assignment of pseudonyms to identifiers. It must be pointed out that the data subjects do not necessarily know nor learn their particular pseudonym, as the pseudonymisation secret (e.g. the pseudonymisation mapping table in this example), is known only to Alpha Corp. The role of pseudonymisation in this case is to enhance the security of personal data either for internal use (e.g. sharing between different units of the controller)11 or in the case of a
@@ -101,6 +103,8 @@ security incident.
 ## 3.2 PROCESSOR INVOLVED IN PSEUDONYMISATION
 
 This scenario is a variation of scenario 1, where a data processor is also involved in the process by obtaining the identifiers from the data subjects (on behalf of the controller). However, the pseudonymisation is still performed by the controller.
+
+### Figure 2 -  Pseudonymisation example Scenario 2
 
 ![ PROCESSOR INVOLVED IN PSEUDONYMISATION](/images/scenario-2.png)
 In this Scenario, a dedicated data processor (Beta Inc.) is given the task to collect the identifiers from the data subjects and forward this information to a subsequent data controller (Alpha Corp.), which finally performs the pseudonymisation. The controller is again the pseudonymisation entity. An example for such a scenario might be a cloud service provider that hosts data collection services on behalf of the data controller. Then, the controller still is in charge of
