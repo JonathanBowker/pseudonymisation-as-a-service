@@ -75,7 +75,7 @@ Pseudonymisation plays an important role in GDPR as a security measure (art. 32 
 
 Furthermore, pseudonymisation (being itself a data minimisation technique) can contribute towards the principle of data minimisation under GDPR, for example in cases where the controller does not need to have access to the real identities of data subjects but only to their pseudonyms. Finally, another important benefit of pseudonymisation that should be carefully considered is that of data accuracy.
 
-## 3.1 Scenario 1: PSEUDONYMISATION FOR INTERNAL USE
+## 3.1 SCENARIO 1: PSEUDONYMISATION FOR INTERNAL USE
 A common data pseudonymisation Scenario is when data are collected directly from the data subjects and pseudonymised by the data controller, for subsequent internal processing.
 
 ![PSEUDONYMISATION FOR INTERNAL USE](/images/scenario-1.png)
@@ -83,7 +83,7 @@ A common data pseudonymisation Scenario is when data are collected directly from
 In this use case, the data controller (Alpha Corp.) has the role of the pseudonymisation entity, as it performs the selection and assignment of pseudonyms to identifiers. It must be pointed out that the data subjects do not necessarily know nor learn their particular pseudonym, as the pseudonymisation secret (e.g. the pseudonymisation mapping table in this example), is known only to Alpha Corp. The role of pseudonymisation in this case is to enhance the security of personal data either for internal use (e.g. sharing between different units of the controller)11 or in the case of a
 security incident.
 
-## 3.2 Scenario 2: PROCESSOR INVOLVED IN PSEUDONYMISATION
+## 3.2 SCENARIO 2: PROCESSOR INVOLVED IN PSEUDONYMISATION
 
 This Scenario is a variation of Scenario 1, where a data processor is also involved in the process by obtaining the identifiers from the data subjects (on behalf of the controller). However, the pseudonymisation is still performed by the controller.
 
@@ -92,7 +92,7 @@ In this use case, a dedicated data processor (Beta Inc.) is given the task to co
 applying data pseudonymisation prior to any subsequent processing. The goals for pseudonymisation are the same as in Scenario 1 (but this time a processor is also involved in
 the process).
 
-## 3.3 Scenario 3: SENDING PSEUDONYMISED DATA TO A PROCESSOR
+## 3.3 SCENARIO 3: SENDING PSEUDONYMISED DATA TO A PROCESSOR
 
 Contrary to the previous case, in this Scenario the data controller again performs the pseudonymisation but this time the processor is not involved in the process but only receives the pseudonymised data from the controller.
 
@@ -115,7 +115,7 @@ This shows a case where the personal data are sent by the data subjects to a dat
 A variation of this Scenario could be a case where several different processors are involved in the pseudonymisation process as a sequence of pseudonymisation entities (chain of processors).
 
 
-## 3.5 Scenario 5: THIRD PARTY AS PSEUDONYMISATION ENTITY
+## 3.5 SCENARIO 5: THIRD PARTY AS PSEUDONYMISATION ENTITY
 
 In this Scenario the pseudonymisation is performed by a third party (not a processor) who subsequently forwards the data to the controller. Contrary to the Scenario 4, the controller in this Scenario does not have access to the data subjects’ identifiers (as the third party is not under the control of the data controller). 
 
@@ -127,7 +127,7 @@ This Scenario could be very relevant to cases of joint controllership, where one
 
 An interesting variation of this Scenario (that would require further analysis) could be the case where the TTP is distributed over more than one entities, which can only jointly create and revert pseudonyms (or possibly based on a secret sharing scheme), so that one does not have to put trust only into a single entity.
 
-## 3.6 Scenario 6: DATA SUBJECT AS PSEUDONYMISATION ENTITY
+## 3.6 SCENARIO 6: DATA SUBJECT AS PSEUDONYMISATION ENTITY
 
 This is a special case of pseudonymisation where the pseudonyms are created by the data subjects themselves as part of the overall pseudonymisation process.
 
