@@ -108,7 +108,7 @@ A variation of this Scenario could be the case where the pseudonymised data is n
 Another possible Scenario is the case where the task of pseudonymisation is assigned by the controller to a data processor (e.g. a cloud service provider that manages the pseudonymisation
 secret and/or arranges the relevant technical facilities).
 
-![PROCESSOR AS PSEUDONYMISATION ENTITY](/images/Scenario-4.png)
+![PROCESSOR AS PSEUDONYMISATION ENTITY](images/Scenario-4.png)
 
 This shows a case where the personal data are sent by the data subjects to a data processor (Beta Inc), which subsequently performs the pseudonymisation, thus acting as the pseudonymisation entity on behalf of the controller (Alpha Corp). The pseudonymised data is then forwarded to the data controller. In this particular Scenario, only the pseudonymised data are stored on the controller’s side. In this way, security at controller’s level is enhanced through data de-identification (e.g. in case of data breach at controller’s side).Still, in all cases the controller is able to re-identify the data subjects through the data processor. Moreover, security at processor’s side becomes of great importance. 
 
