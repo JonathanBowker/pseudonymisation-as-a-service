@@ -546,12 +546,12 @@ Starting from this simple case, depending on the level of data protection and ut
 
 | E-mail address | Pseudonym (RNG) retaining the info on identical domains | Pseudonym (RNG) retaining also the info on identical country/extension | Pseudonym (RNG) retaining the info on identical local parts and domains | Pseudonym (RNG) retaining the info on identical country/extension, domains and local parts |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| alice@abc.eu | 328  | 10 | 10 | 10 |
-| bob@wxyz.com | 105  | 11 | 10 | 10 |
-| eve@abc.eu | 209 | 12 | 10 | 10 |
-| john@qed.edu | 83 | 13 | 10 | 10 |
-| alice@wxyz.co | 512 | 14 | 10 | 10 |
-| mary@clm.eu | 289 | 15 | 10 | 10 |
+| alice@abc.eu | 328@1051  | 328@1051.3 | 328@1051 | 328@1051.3 |
+| bob@wxyz.com | 105@833  | 105@833.7 | 105@833| 105@833.7 |
+| eve@abc.eu | 209@1051 | 209@1051.3 | 209@1051 | 209@1051.3 |
+| john@qed.edu | 83@420 | 83@420.8 | 83@420 | 83@420.8 |
+| alice@wxyz.co | 512@833 | 512@833.7 | 328@833 | 328@833.7 |
+| mary@clm.eu | 289@2105 | 289@2105.3 | 289@2105 | 289@2105.3 |
 
 The main pitfalls of both counter and RNG lie with the scalability of the technique in cases of large datasets, especially if it is required that the same pseudonym is always assigned to the same address (i.e. in a deterministic pseudonymisation scenario as in Table 12). Indeed, in such case, the pseudonymisation entity needs to perform a cross-check throughout the whole pseudonymisation table whenever a new entry is to be pseudonymised. Complexity increases in more sophisticated cases of implementation as those shown in Table 14 (e.g. when the pseudonymisation entity needs to classify email addresses with the same domain or the same country without revealing this domain/country).
 
@@ -602,7 +602,6 @@ In the example of Table 12, both counter and RNG result to pseudonyms that do no
 As shown in Table 13, while the emails are pseudonymised, it is still possible to know the domain and, thus, conduct relevant analysis (e.g. number of email users originating from the same domain). As discussed earlier in the document, counter may be weaker in terms of protection as it allows for predictions due to its sequential nature (e.g. in cases where email addresses come from the same domain, the use of counter may reveal information regarding the sequence of the different email users in the database). 
 
 Starting from this simple case, depending on the level of data protection and utility that the pseudonymisation entity needs to achieve, different variations might be possible by retaining different levels of information in the pseudonyms (e.g. on identical domains, local parts, etc.).
-
 
 ![Examples of email address pseudonymisation with RNG - various utility levels](/images/email-complex-mapping.png)
 
