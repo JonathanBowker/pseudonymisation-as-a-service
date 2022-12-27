@@ -30,15 +30,15 @@ It should be noted that most uses cases are generally based on specific types of
 ## 1.3 SERVICE MODULES
 
 The outline of the service is as follows:
-  - Implementing the dictionary and definitions and relevant explanatory notes where needed.
-  - Identifying the pseudonymisation scenario to be engaged in practice.
-  - Assessing adversarial and attack models with regard to the pseudonymisation.
-  - Selecting the appropriate pseudonymisation techniques and policies.
-  - Testing pseudonymisation techniques on identifiers and more complex datasets (use cases). 
-  - Implementing the pseudonymisation server and deploying models in production.
-  - Providing ongoing support and recommendations for all related stakeholders.
+  - Implementing a glossary of terms and relevant explanatory notes.
+  - Identifying scenarios where pseudonymisation needs to be engaged.
+  - Assessing adversarial and attack models with regard the scenarios.
+  - Selecting appropriate pseudonymisation techniques and policies.
+  - Testing pseudonymisation techniques on identifiers and complex datasets (use cases). 
+  - Implementing deploying a pseudonymisation management server and models.
+  - Providing ongoing support and recommendations for relevant stakeholders.
 
-Our Pseudonymisation service focuses on analysing technical solutions for the implementation of robust GDPR complaince programmes, privacy by design and security of personal data processing.
+Our Pseudonymisation service focuses on analysing technical solutions for the implementation of robust GDPR compliance programmes, privacy by design and security of personal data processing.
 
 # 2. DEFINITIONS 
 We present a number of terms that we use as part of our service and are essential to project stakeholder. Some of these terms are based on GDPR, whereas others refer to technical standards or are explicitly defined for the purpose of service delivery.
