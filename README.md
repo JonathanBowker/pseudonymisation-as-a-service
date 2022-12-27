@@ -261,7 +261,7 @@ Depending on the choice of pseudonymisation function, a pseudonym may contain so
 
 ##### Figure 7: Utility and data protection
 
-![UTILITY AND DATA PROTECTION](/images/utility.png)
+![UTILITY AND DATA PROTECTION](/images/utility.jpg)
 
 However, in many cases, the additional information on the original identifier contained in the pseudonym is kept for linkage among pseudonyms themselves, to be performed by a valid subsequent data controller. For instance, a pseudonym may keep the year of birth from a person's birth date as part of the pseudonym (e.g. ‘’AAAA1999’’). This way, it is feasible to categorise pseudonyms based on their year of birth, e.g. concerning their age, their legal status (child or adult), their life conditions (schoolchild/working/retired), or similar. This may be an intentional feature of the pseudonymisation function utilised, allowing controllers to perform such sort of classification even on the pseudonymised data. 
 
