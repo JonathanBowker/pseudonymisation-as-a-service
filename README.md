@@ -1,14 +1,14 @@
 # Pseudonymisation-as-a-Service
-## Pseudonymisation advisory services for state of the art techniques and best practiceson, and shaping technology according to data protection and privacy requirements. 
+## Pseudonymisation advisory services for state of the art techniques and best practices for shaping technology according to data protection and privacy requirements. 
 
 ### Risk-based approach to pseudonymisation
-Pseudonymisation techniques have their own well understood and intrinsic properties but this does not mean the selection and implementation of an appropriate pseudonymisation technique is a simple and trivial task. We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability.
+Pseudonymisation techniques have their own well understood and intrinsic properties but this does not render the choice of the proper technique a trivial task in practice. . We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability.
 
-**Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.**
+* Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
 
-**Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that these provide.**
+* Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that these provide.
 
-**Advanced Analytica can provide practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.**
+* Advanced Analytica can provide practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.
 
 # 1. INTRODUCTION
 
