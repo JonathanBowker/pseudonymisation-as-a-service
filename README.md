@@ -31,10 +31,10 @@ The outline of the service is as follows:
 
 - Implementing a dictionary of terms and relevant explanatory notes.
 - Identifying scenarios where pseudonymisation needs to be engaged.
-- Assessing adversarial and attack models (Motivated Intruder Tests) for specific use cases.
+- Assessing adversarial and attack models for specific pseudonymisation use cases.
 - Selecting appropriate pseudonymisation techniques and control procedures.
 - Applying pseudonymisation techniques to identifiers and other sensitive data.
-- Implementing a Pseudonymisation Operations Management System and strategy.
-- Providing ongoing support for state-of-the-art pseudonymisation for stakeholders.
+- Implementing a pseudonymisation management system to manage safegaurd operations.
+- Providing ongoing support for state-of-the-art techniques for stakeholders.
 
-Overall we focus on assessing technical solutions for the implementation of robust GDPR compliance programmes with privacy by design and secure processing of personal data.
+Overall we focus on assessing technical solutions for the implementation of robust GDPR compliance programmes with privacy by design and secure processing of personal data as a custodian.
