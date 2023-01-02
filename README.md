@@ -1,4 +1,4 @@
-# Pseudonymisation-as-a-Service
+# Pseudonymisation-as-a-service
 We provide practical guidance for assessing risk and advise on best practice in the field of pseudonymisation, as well access to advanced tools for building state-of-the-art pseudonymisation management systems and compliance programmes.
 
 # What is pseudonymisation?
