@@ -23,5 +23,5 @@ Pseudonymisation techniques have well understood and intrinsic properties, but t
 
 * **Producers of products, services and applications** with providing adequate information to controllers and processors regarding their use of pseudonymisation techniques to safegaurd personal data and the levels of data protection they provide.
 
-# Pseudonymisation-as-a-service
+# Advanced pseudonymisation service
 We work closely with global privacy teams to provide practical guidance for risk assessment and advise on best practice in the field of data pseudonymisation. We provide access to the advanced tools, technologies and techniques needed for building state-of-the-art pseudonymisation management systems and automated compliance programmes.
