@@ -42,7 +42,7 @@ More specifically, we help our clients:
   - Apply technniques to specific personal identifiers and other sensitive data use cases. _(3 to 5 days)_
   - Draw conclusions and make recommendations for the improvement of pseudonymisation systems.  _(Subscription)_
   
-Gernerally, uses cases focus on specific types of Personal Identifiable Data (PID) _(contact details, IP addresses, email addresses, and usernames etc in both structured and unstructured data sets)_ that represent real-life scenarios. However, the use of pseudonymisation can be extended for more diverse requirements, i.e. arising from the strict format of IP addresses to more flexible structure of email addresses and UID numbers and the unpredictable nature of large data sets. We suppport data controllers and data processors, and producers of products, services and applications, and any other party inetrested in pseudonymisation.
+Gernerally, we focus on specific types of Personal Identifiable Data (PID) _(contact details, IP addresses, email addresses, and usernames etc in both structured and unstructured data sets)_ that represent real-life scenarios. However, pseudonymisation can be extended for more diverse requirements  arising from the strict format of IP addresses to more flexible structure of email addresses and UID numbers, and the unpredictable nature of large data sets. We suppport data controllers and data processors, and producers of products, services and applications with the adoption pseudonymisation techniques and system management.
 
 ## 1.3 SERVICE MODULES
 
