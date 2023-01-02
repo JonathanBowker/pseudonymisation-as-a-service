@@ -2,46 +2,46 @@
 Pseudonymisation advisory services for state of the art techniques and best practices for shaping technology according to data protection and privacy requirements. 
 
 ### Risk-based approach to pseudonymisation
-Pseudonymisation techniques have their own well understood and intrinsic properties but this does not render the choice of the proper technique a trivial task in practice. . We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability.
+Pseudonymisation techniques have their own well understood and intrinsic properties but this does not render the choice of the proper technique a trivial task in practice. We provide a risk-based approach to assess the required protection level and consider relevant utility and scalability of perosnal data.
 
 * Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
 
-* Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that these provide.
+* Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that they provide.
 
-* Advanced Analytica can provide practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.
+* Advanced Analytica provides practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.
 
 # 1. INTRODUCTION
 
 ## 1.1 BACKGROUND
-Pseudonymisation is a well-known de-identification process that has gained additional attention following the adoption of EU and UK GDPR, where it is referenced as both a technical security measure and data protection by design mechanism. **In addition, in the GDPR context, pseudonymisation can motivate the relaxation, to a certain degree, of data controllers’ legal obligations if properly applied.**
+Pseudonymisation is a recognised de-identification process that has gained significant attention following the adoption of EU and UK GDPR, where it is referenced as both a technical security measure and data protection by design mechanism. **In addition to its reference in GDPR compliance, pseudonymisation can, to a certain degree, motivate the relaxation of data controllers’ legal obligations if properly applied.**
 
 ## 1.2 SCOPE AND OBJECTIVES
 
-The overall scope of our pseudonymisation (tech-legal) service is to provide our clients with guidance and advise for best practice on the technical implementation of data pseudonymisation strategy.
+The overall scope of our pseudonymisation service is to provide our clients with guidance and advise for best practice for technical planning and  implementation of an effective pseudonymisation strategy.
 
-More specifically, our objectives are to: 
+More specifically, we help our clients: 
   - Identify different pseudonymisation scenarios and the relevant actors involved. 
-  - Select possible pseudonymisation techniques in correlation with relevant adversarial and attack models. 
-  - Analyse the application of pseudonymisation to specific identifiers and other types of structured and unstructured data sets (use cases). 
-  - Draw relevant conclusions and make recommendations for ongoing improvement. 
+  - Select pseudonymisation techniques in correlation with adversarial and attack models. 
+  - Apply technniques to specific personal identifiers and other sensitove data use cases. 
+  - Draw relevant conclusions and make recommendations for ongoing improvement for data management. 
   
-It should be noted that most uses cases are generally based on specific types of identifiers (IP addresses, email addresses, and username identifiers in both structured and unstructured data sets) that represent real-life scenarios. At the same time, use cases also reflect diverse requirements with regard to pseudonymisation, i.e. arising from the strict format of IP addresses to the more flexible structure of email addresses and usernames, and the unpredictable nature of large datasets. Our target audience are data controllers, data processors and producers of products, services and applications, and any other interested party in data pseudonymisation.
+Gernerally, uses cases focus on specific types of Personal Identifiable Data (PID) _(contact details, IP addresses, email addresses, and usernames etc in both structured and unstructured data sets)_ that represent real-life scenarios. However, the use of pseudonymisation can be extended for more diverse requirements, i.e. arising from the strict format of IP addresses to more flexible structure of email addresses and UID numbers and the unpredictable nature of large data sets. We suppport data controllers and data processors, and producers of products, services and applications, and any other party inetrested in pseudonymisation.
 
 ## 1.3 SERVICE MODULES
 
 The outline of the service is as follows:
-  - Implementing a glossary of terms and relevant explanatory notes.
+  - Implementing a dictionary of terms and relevant explanatory notes.
   - Identifying scenarios where pseudonymisation needs to be engaged.
-  - Assessing adversarial and attack models with regard the scenarios.
-  - Selecting appropriate pseudonymisation techniques and policies.
+  - Assessing adversarial and attack models with regard specific use cases.
+  - Selecting appropriate pseudonymisation control procedures and policies.
   - Testing pseudonymisation techniques on identifiers and complex datasets (use cases). 
-  - Implementing deploying a pseudonymisation management server and models.
-  - Providing ongoing support and recommendations for relevant stakeholders.
+  - Implementing deploying a pseudonymisation management system and strategy.
+  - Providing ongoing support for state-of-the-art pseudonymisation for stakeholders.
 
-Our Pseudonymisation service focuses on analysing technical solutions for the implementation of robust GDPR compliance programmes, privacy by design and security of personal data processing.
+Overall we focus on assessing technical solutions for the implementation of robust GDPR compliance programmes with privacy by design and secure processing of personal data.
 
-# 2. DEFINITIONS 
-General terms used as part of our service which we consider essential to project stakeholders. Some of these terms are based on GDPR, whereas others refer to technical standards or are explicitly defined for the purpose of service delivery.
+# 2. DICTIONARY 
+To  establish a dictionary. we use general and commonly used terms which we consider essential to project stakeholders. Some of these terms are based on GDPR and others refer to technical standards, or are explicitly defined for specific use cases and pseudonymisation systems. We use [Data Privacy Vocabularly DPV](https://w3c.github.io/dpv/dpv/) to create machine-readable metadata to express legal documentation required by legal systems such as the General Data Protection Regulation [GDPR]. The following DPV is at the core of our pseudonymisation  dictionaries: 
 
 ### Personal Data
 Refers to any information relating to an identified or identifiable natural person (data subject); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person (GDPR, art. 4(1)).
@@ -85,10 +85,8 @@ Refers to an entity that tries to break pseudonymisation and link a pseudonym (o
 ### Re-identification Attack
 Refers to an attack on pseudonymised data performed by an Adversary that aims to re-identify the holder of a Pseudonym.
 
-# 3. PSEUDONYMISATION SCENARIOS
-Pseudonymisation plays an important role in GDPR as a security measure (art. 32 GDPR), as well as in the context of data protection by design (art. 25 GDPR). The most obvious benefit of pseudonymisation is to hide the identity of the data subjects from any third party (i.e. other than the pseudonymisation entity) in the context of a specific data processing operation. Still, pseudonymisation can go beyond hiding real identities into supporting the data protection goal of unlinkability, i.e. reducing the risk that privacy-relevant data can be linked across different data processing domains. 
-
-Furthermore, pseudonymisation (being itself a data minimisation technique) can contribute towards the principle of data minimisation under GDPR, for example in cases where the controller does not need to have access to the real identities of data subjects but only to their pseudonyms. Finally, another important benefit of pseudonymisation that should be carefully considered is that of data accuracy.
+# 3. PSEUDONYMISATION USE CASES
+Pseudonymisation plays an important role in GDPR as a security measure (art. 32 GDPR), as well as in the context of data protection by design (art. 25 GDPR). It can hide the identity of the data subjects from any third party (i.e. other than the [Pseudonymisation Entity](https://github.com/JonathanBowker/pseudonymisation-as-a-service/edit/main/README.md#pseudonymisation-entity)) in the context of a specific data processing operation. Pseudonymisation can go beyond hiding the real identity of individuals by supporting the de-linking objective of data protection  by reducing the risk of privacy-relevant data being linked across multiple domains or sources. It can also contibute twoards the principle of data minimisation under GDPR, especially where the controller doesn't need access to Personal Identifiable Data (PID) for data subjects but only to PID pseudonyms.
 
 ## 3.1 PSEUDONYMISATION FOR INTERNAL USE
 A common data pseudonymisation scenario is when data are collected directly from the data subjects and pseudonymised by the data controller, for subsequent internal processing.
