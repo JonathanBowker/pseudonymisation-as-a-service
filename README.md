@@ -5,7 +5,7 @@ Pseudonymised data can still be traced to the data subject but it requires exter
 
 # What is profiling?
 In Article 4 (4), the UK GDPR defines Profiling as follows:
-> _“*'profiling’* means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements."_
+> _“ **'profiling’** means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements."_
 
 Profiling can be used for predicting the data subject’s behaviour and can be a valuable tool for  direct or indirect marketing and analysis. GDPR protects data subjects from decisions based solely on automated processing (including profiling) when the processing has legal or similarly significant consequences for them. For example, it is prohibited to deny a request for service or product based on the automated processing of the information about the individual, since this results in significant (and potentially legal) consequences for that person. The right to object for data subjects in the GDPR explicitly mentions profiling. 
 
