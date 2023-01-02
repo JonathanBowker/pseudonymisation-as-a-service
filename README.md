@@ -37,4 +37,4 @@ The outline of the service is as follows:
 - Implementing a pseudonymisation management system to manage safegaurd operations.
 - Providing ongoing support for state-of-the-art techniques for stakeholders.
 
-Overall we focus on assessing technical solutions for the implementation of robust GDPR compliance programmes with privacy by design and secure processing of personal data as a custodian.
+Overall we focus on assessing technical solutions for the implementation of robust compliance programmes with privacy by design and secure processing of personal data as a custodian.
