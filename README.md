@@ -25,3 +25,16 @@ Pseudonymisation techniques have well understood and intrinsic properties, but t
 
 # Advanced pseudonymisation service
 We work closely with global privacy teams to provide practical guidance for risk assessment and advise on best practice in the field of data pseudonymisation. We provide access to the advanced tools, technologies and techniques needed for building state-of-the-art pseudonymisation management systems and automated compliance programmes.
+
+## Service modules
+The outline of the service is as follows:
+
+- Implementing a dictionary of terms and relevant explanatory notes.
+- Identifying scenarios where pseudonymisation needs to be engaged.
+- Assessing adversarial and attack models (Motivated Intruder Tests) for specific use cases.
+- Selecting appropriate pseudonymisation techniques and control procedures.
+- Applying pseudonymisation techniques to identifiers and other sensitive data.
+- Implementing a Pseudonymisation Operations Management System and strategy.
+- Providing ongoing support for state-of-the-art pseudonymisation for stakeholders.
+
+Overall we focus on assessing technical solutions for the implementation of robust GDPR compliance programmes with privacy by design and secure processing of personal data.
