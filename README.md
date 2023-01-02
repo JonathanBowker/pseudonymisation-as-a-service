@@ -37,4 +37,4 @@ The outline of the service is as follows:
 - Implementing a pseudonymisation management system and safegaurd automation.
 - Providing ongoing support for state-of-the-art techniques for stakeholders.
 
-Overall we focus on assessing technical solutions for personal data custodians and implementation of pseudonymisation management systems and robust compliance programmes with privacy by design for secure processing of personal data.
+Overall we focus on assessing, building and implementating technical solutions for personal data custodians with privacy by design for the secure processing and management of personal data.
