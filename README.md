@@ -3,7 +3,7 @@ Pseudonymisation uses a form of encryption to translate identifiable personal da
 
 Pseudonymised data can still be traced to the data subject but it requires external information to do so. The personal data points still exist but through technically enforced separation and explicit amd implicit linking functions.
 
-# Whatis personal data profiling?
+# What is personal data profiling?
 In Article 4 (4), the UK GDPR defines Profiling as follows:
 > _“ **'profiling’** means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements."_
 
