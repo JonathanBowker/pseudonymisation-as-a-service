@@ -1,3 +1,6 @@
+# Pseudonymisation-as-a-Service
+We provide practical guidance for assessing risk and advise on best practice in the field of pseudonymisation, as well access to advanced tools for building state-of-the-art pseudonymisation management systems and compliance programmes.
+
 # What is pseudonymisation?
 Pseudonymisation uses a form of encryption to translate identifiable personal data points to unique artificial identifiers - pseudonyms. It technique aims to de-link a person from personal data held under custodianship. This renders the data ‘pseudonymous’ within a specific use case, but beyond this use case the person can still be re-identified through clearly defined procedures and controls. This technique can applied to personal data as an acceptable security measure under GDPR to preventing linking personal data to the identity of the person to whom it belongs.
 
@@ -22,7 +25,3 @@ Pseudonymisation techniques have well understood and intrinsic properties, but t
 * **Data controllers and processors** that need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
 
 * **Producers of products, services and applications** who should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and the data protection levels that they provide.
-
-## Pseudonymisation-as-a-Service
-
-We provide practical guidance for assessing risk and advise on best practice in the field of pseudonymisation, as well access to expertise and advanced tools for building state-of-the-art pseudonymisation management systems and compliance programmes.**
