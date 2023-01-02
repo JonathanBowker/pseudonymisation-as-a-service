@@ -15,13 +15,15 @@ If you or your organisation engages in profiling, pseudonomysing the data used i
 When approptialety managed, pseudonymisation can open up more data processing opportunities than processing data without pseudonymisation as a security measure. Pseudonymisation does not render the data anonymous. Pseudonymised data is still personal data and needs to treated as such and data subjects must have be able to execute their rights under GDPR and other legal systems. 
 
 # How can we help? - Pseudonymisation-as-a-Service
-Pseudonymisation techniques have well understood and intrinsic properties but this does not render the choice of the proper technique a trivial task in practice. We offer a risk-based approach for assessing required protection levels while considering relevant utility and scalability to shape technology according to data protection and privacy requirements. 
+Pseudonymisation techniques have well understood and intrinsic properties but this does not render the choice of the proper technique a trivial task in practice. 
+
+We take a risk-based approach to assess required data protection levels, and utility and scalability to shape your technology according to data protection and privacy requirements. We help:
 
 * Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
 
 * Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that they provide.
 
-* Advanced Analytica provides practical guidance to data controllers and processors with regard to the assessment of the risk, while advising on best practice in the field of pseudonymisation.
+We provide practical guidance to data controllers and processors with regard to the assessment of risk while advising on best practice in the field of pseudonymisation and pseudonymisation systems management.
 
 # 1. INTRODUCTION
 
@@ -35,10 +37,10 @@ Pseudonymisation uses a form of encryption to translate identifiable parts of pe
 The overall scope of our pseudonymisation service is to provide guidance and advise for best practice, and technical planning and implementation of a robust pseudonymisation strategy and management system.
 
 More specifically, we help our clients: 
-  - Identify different pseudonymisation use cases and the relevant actors involved. 
-  - Select pseudonymisation techniques in correlation with adversarial and attack models. 
-  - Apply technniques to specific personal identifiers and other sensitive data use cases. 
-  - Draw conclusions and make recommendations for the improvement of pseudonymisation systems. 
+  - Identify different pseudonymisation use cases and the relevant actors involved. _(Workshop 1/2 day or 1 to 2 days)_
+  - Select pseudonymisation techniques in correlation with adversarial and attack models. _(1 to 2 days)_
+  - Apply technniques to specific personal identifiers and other sensitive data use cases. _(3 to 5 days)_
+  - Draw conclusions and make recommendations for the improvement of pseudonymisation systems.  _(Subscription)_
   
 Gernerally, uses cases focus on specific types of Personal Identifiable Data (PID) _(contact details, IP addresses, email addresses, and usernames etc in both structured and unstructured data sets)_ that represent real-life scenarios. However, the use of pseudonymisation can be extended for more diverse requirements, i.e. arising from the strict format of IP addresses to more flexible structure of email addresses and UID numbers and the unpredictable nature of large data sets. We suppport data controllers and data processors, and producers of products, services and applications, and any other party inetrested in pseudonymisation.
 
