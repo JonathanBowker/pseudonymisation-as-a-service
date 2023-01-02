@@ -1,8 +1,9 @@
-# What is pseudonymisation and profiling?
+# What is pseudonymisation?
 Pseudonymisation uses a form of encryption that translates the points of identifiable personal data to unique artificial identifiers, or pseudonyms. It aims to de-link a person from the  personal data held under your custodianship. This renders the data ‘pseudonymous’ within a specific context, but beyond this context the person can still be re-identified through strict procedures and controls. This technique can applied to personal data as an acceptable security measure for preventing linking of that personal data to the identity of the person to whom it belongs.
 
 Pseudonymised data can still be traced to the data subject but requires external information to be presented to do so. All the data points still exist but is in a seperated places. It must be noted that with anonymised data, the original source data is deleted and therefore inaccessible and irreproducible.
 
+# What is profiling?
 GDPR refers to Profiling as a means “any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person”.
 
 Profiling can be used for predicting the data subject’s behaviour and can be a valuable tool for  direct or indirect marketing and analysis. GDPR protects data subjects from decisions based solely on automated processing (including profiling) when the processing has legal or similarly significant consequences for them. For example, it is prohibited to deny a request for service or product based on the automated processing of the information about the individual, since this results in significant (and potentially legal) consequences for that person. The right to object for data subjects in the GDPR explicitly mentions profiling. 
