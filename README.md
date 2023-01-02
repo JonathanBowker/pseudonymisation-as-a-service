@@ -1,4 +1,4 @@
-# What is pseudonymisation and what is profiling?
+# What is pseudonymisation and profiling?
 Pseudonymisation uses a form of encryption that translates the points of identifiable personal data to unique artificial identifiers, or pseudonyms. It aims to de-link a person from the  personal data held under your custodianship. This renders the data ‘pseudonymous’ within a specific context, but beyond this context the person can still be re-identified through strict procedures and controls. This technique can applied to personal data as an acceptable security measure for preventing linking of that personal data to the identity of the person to whom it belongs.
 
 Pseudonymised data can still be traced to the data subject but requires external information to be presented to do so. All the data points still exist but is in a seperated places. It must be noted that with anonymised data, the original source data is deleted and therefore inaccessible and irreproducible.
