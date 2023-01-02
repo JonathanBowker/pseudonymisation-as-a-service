@@ -23,7 +23,7 @@ We take a risk-based approach to assess required data protection levels, and uti
 
 * Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that they provide.
 
-We provide practical guidance to data controllers and processors with regard to the assessment of risk while advising on best practice in the field of pseudonymisation and pseudonymisation systems management.
+We provide practical guidance for data controllers and processors for the assessing risk and advising on best practice for pseudonymisation, and pseudonymisation system design and management.
 
 # 1. INTRODUCTION
 
