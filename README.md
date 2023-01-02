@@ -16,14 +16,14 @@ If you or your organisation engages in profiling activities, pseudonomysing the 
 
 When appropriately managed, pseudonymisation can open more opportunities for processing personal data than processing plain text data without pseudonymisation as a security measure. However, it is still important to treat pseudonymised data as personal data and observe the rights of data subjects. 
 
-# How can we help? - Pseudonymisation-as-a-Service
-Pseudonymisation techniques have well understood and intrinsic properties but this does not render the choice and implementation of the proper pseudonymisation technique a trivial task in practice.  Taking a risk-based approach, we help to assess required data protection levels, and utility and scalability helps to shape technology according to data protection and privacy requirements for:
+# How can we help?
+Pseudonymisation techniques have well understood and intrinsic properties but this does not render the choice and implementation of a proper pseudonymisation technique for a specific use case a trivial task in practice.  Taking a risk-based approach, we help to assess required data protection levels, and utility and scalability to help shape your technology according to data protection and privacy requirements. We help our clienst to grow efficiently and impress their customers with higher quality data privacy and protection and reduce risk by providing support to:
 
-* Data controllers and processors need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
+* **Data controllers and processors** that need to carefully consider the implementation of pseudonymisation following a risk-based approach, taking into account the purpose and overall context of the personal data processing, as well as the utility and scalability levels they wish to achieve.
 
-* Producers of products, services and applications should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and data protection levels that they provide.
+* **Producers of products, services and applications** who should provide adequate information to controllers and processors regarding their use of pseudonymisation techniques and the security and the data protection levels that they provide.
 
-We provide practical guidance for data controllers and processors for the assessing risk and advising on best practice for pseudonymisation, and pseudonymisation system design and management.
+We provide practical guidance for data controllers and processors for assessing risk and advising on best practice in the field of pseudonymisation  and system design and management.
 
 # 1. INTRODUCTION
 
