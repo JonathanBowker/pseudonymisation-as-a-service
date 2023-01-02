@@ -4,7 +4,7 @@ Pseudonymisation uses a form of encryption to translate identifiable personal da
 Pseudonymised data can still be traced to the data subject but it requires external information to do so. The personal data points still exist but through technically enforced separation and explicit amd implicit linking functions.
 
 # What is profiling?
-GDPR refers to Profiling as a means  
+GDPR refers to Profiling as:
 > _“any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person”_.
 
 Profiling can be used for predicting the data subject’s behaviour and can be a valuable tool for  direct or indirect marketing and analysis. GDPR protects data subjects from decisions based solely on automated processing (including profiling) when the processing has legal or similarly significant consequences for them. For example, it is prohibited to deny a request for service or product based on the automated processing of the information about the individual, since this results in significant (and potentially legal) consequences for that person. The right to object for data subjects in the GDPR explicitly mentions profiling. 
