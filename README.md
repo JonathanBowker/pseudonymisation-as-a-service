@@ -17,7 +17,7 @@ If you or your organisation engages in profiling activities, pseudonomysing pers
 When appropriately implemented and managed, pseudonymisation can open up more opportunities for processing personal data than processing plain text data without pseudonymisation as a security measure. However, it is still critcal to treat pseudonymised data as personal data, and to safeguard data subjects’ rights, freedoms and legitimate interests.
 
 # How can we help?
-Pseudonymisation techniques have well understood and intrinsic properties, but this does not render the choice and implementation of a right technique for a specific use case a trivial task in practice. By taking a risk-based approach, we help our clients assess the data protection levels required by regulators in correlation with their requirements for utility and scalability. This helps them shape their technology according to regulatory requirements and supports:
+Pseudonymisation techniques have well understood and intrinsic properties but this does not render the choice and implementation of a right technique for a specific use case a trivial task in practice. By taking a risk-based approach, we help our clients assess the data protection levels required by regulators in correlation with their requirements for utility and scalability. This helps them shape their technology according to regulatory requirements and supports:
 
 * **Data controllers and processors** with the implementation of advanced pseudonymisation systems following, taking into account the purpose and overall context of their processing activities, in line with the utility and scalability levels they wish to achieve.
 
