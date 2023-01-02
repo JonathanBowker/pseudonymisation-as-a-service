@@ -34,7 +34,7 @@ The outline of the service is as follows:
 - Assessing adversarial and attack models for specific pseudonymisation use cases.
 - Selecting appropriate pseudonymisation techniques and control procedures.
 - Applying pseudonymisation techniques to identifiers and other sensitive data.
-- Implementing a pseudonymisation management system to manage safegaurd operations.
+- Implementing a pseudonymisation management system and safegaurd automation.
 - Providing ongoing support for state-of-the-art techniques for stakeholders.
 
 Overall we focus on assessing technical solutions for the implementation of robust compliance programmes with privacy by design and secure processing of personal data as a custodian.
